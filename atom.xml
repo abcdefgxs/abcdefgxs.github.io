@@ -6,7 +6,7 @@
   <link href="https://abcdefgxs.github.io/atom.xml" rel="self"/>
   
   <link href="https://abcdefgxs.github.io/"/>
-  <updated>2021-03-10T07:33:13.739Z</updated>
+  <updated>2021-03-10T15:07:05.794Z</updated>
   <id>https://abcdefgxs.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>docker安装与基本命令</title>
+    <link href="https://abcdefgxs.github.io/2021/03/10/docker-an-zhuang-yu-ji-ben-ming-ling/"/>
+    <id>https://abcdefgxs.github.io/2021/03/10/docker-an-zhuang-yu-ji-ben-ming-ling/</id>
+    <published>2021-03-10T15:06:23.000Z</published>
+    <updated>2021-03-10T15:07:05.794Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;一、docker安装&quot;&gt;&lt;a href=&quot;#一、docker安装&quot; class=&quot;headerlink&quot; title=&quot;一、docker安装&quot;&gt;&lt;/a&gt;一、docker安装&lt;/h4&gt;&lt;p&gt;1.更新yum源。&lt;/p&gt;
+&lt;figure</summary>
+        
+      
+    
+    
+    
+    
+    <category term="docker" scheme="https://abcdefgxs.github.io/tags/docker/"/>
+    
+    <category term="后端" scheme="https://abcdefgxs.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>hello world</title>
