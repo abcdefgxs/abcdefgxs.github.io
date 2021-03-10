@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>欢迎来到xs的博客</title>
+  
+  
+  <link href="https://abcdefgxs.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://abcdefgxs.github.io/"/>
+  <updated>2021-03-10T07:33:13.739Z</updated>
+  <id>https://abcdefgxs.github.io/</id>
+  
+  <author>
+    <name>xs</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hello world</title>
+    <link href="https://abcdefgxs.github.io/2021/03/10/hello-world/"/>
+    <id>https://abcdefgxs.github.io/2021/03/10/hello-world/</id>
+    <published>2021-03-10T07:31:46.000Z</published>
+    <updated>2021-03-10T07:33:13.739Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    
+    <category term="前端" scheme="https://abcdefgxs.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+</feed>
