@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>docker安装与基本命令 | 欢迎来到xs的博客</title>
+  <title>music表的结构 | 欢迎来到xs的博客</title>
 
   
     
@@ -540,7 +540,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/13.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/2.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
@@ -551,7 +551,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
           <script>
             var typed = new Typed("#post-detail-header-title", {
-              strings: ['docker安装与基本命令'],
+              strings: ['music表的结构'],
               startDelay: 100,
               typeSpeed: 100,
               loop: false,
@@ -576,7 +576,7 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2021-03-10</span>
+        <span class="post-time">2021-03-11</span>
       </div>
       
       <div class="post-tags-categories">
@@ -584,12 +584,16 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/docker/" class="">
-              docker
-            </a>
-          
             <a href="/tags/%E5%90%8E%E7%AB%AF/" class="">
               后端
+            </a>
+          
+            <a href="/tags/mysql/" class="">
+              mysql
+            </a>
+          
+            <a href="/tags/markdown/" class="">
+              markdown
             </a>
           
         </div>
@@ -597,58 +601,891 @@
         
       </div>
       <div class="post-content">
-        <h4 id="一、docker安装"><a href="#一、docker安装" class="headerlink" title="一、docker安装"></a>一、docker安装</h4><p>1.更新yum源。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y update</span><br></pre></td></tr></table></figure>
+        <h2 class="bamboo-h " id="music表的结构">music表的结构</h2><br/>
 
-<p>2.安装epel源。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y epel-release </span><br></pre></td></tr></table></figure>
-
-<p>3.清除yum缓存。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum clean all</span><br></pre></td></tr></table></figure>
-
-<p>4.安装并运行Docker。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum install docker-io -y</span><br><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
-
-<p>5.查看docker是否安装成功</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker info</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="二、docker进程相关的基本命令"><a href="#二、docker进程相关的基本命令" class="headerlink" title="二、docker进程相关的基本命令"></a>二、docker进程相关的基本命令</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker     #运行Docker守护进程</span><br><span class="line">systemctl stop docker      #停止Docker守护进程</span><br><span class="line">systemctl restart docker   #重启Docker守护进程</span><br><span class="line">systemctl enable docker    #开机自启动</span><br><span class="line">systemctl status docker    #查看docker的状态</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="三、镜像相关命令"><a href="#三、镜像相关命令" class="headerlink" title="三、镜像相关命令"></a>三、镜像相关命令</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker pull redis:6.0.12  # 拉取redis6.0.12版本的镜像</span><br><span class="line"></span><br><span class="line">docker rmi c196798056c5  # 删除某个镜像</span><br></pre></td></tr></table></figure>
-
-<p><img "" class="lazyload placeholder" data-original="https://i.loli.net/2021/03/09/WbT1oD4ENrapyk9.jpg" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="四、docker容器相关命令"><a href="#四、docker容器相关命令" class="headerlink" title="四、docker容器相关命令"></a>四、docker容器相关命令</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">docker ps  # 查看正在运行的容器</span><br><span class="line">docker ps -a # 查看所有容器</span><br><span class="line"></span><br><span class="line">docker run 参数</span><br><span class="line"></span><br><span class="line">参数书名</span><br><span class="line">-d: 后台运行容器，并返回容器ID；</span><br><span class="line">-i: 以交互模式运行容器，通常与 -t 同时使用；</span><br><span class="line">-P: 随机端口映射，容器内部端口随机映射到主机的端口</span><br><span class="line">-p: 指定端口映射，格式为：主机(宿主)端口:容器端口</span><br><span class="line">-t: 为容器重新分配一个伪输入终端，通常与 -i 同时使用；</span><br><span class="line">--name: 为容器指定名称</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker exec -it c1 /bin/bash  # 进入c1容器并分配中断</span><br><span class="line"></span><br><span class="line">docker stop c1 # 关闭c1容器</span><br><span class="line">docker rm c1[容器名称|容器id]# 删除c1容器</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker inspect c1 # 查看容器信息</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 新建一个容器并指定名称为c1并新建一个模拟终端</span></span><br><span class="line">docker run -it --name=c1 centos:7 /bin/bash</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 在后台创建一个容器</span></span><br><span class="line">docker run -id --name=c2 centos:7 /bin/bash</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker run -it --name=c3 -v /root/data:/root/data_container centos:7 /bin/bash</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.创建启动c3数据卷容器，使用-v参数设置数据卷</span><br><span class="line">docker run -it --name=c3 -v /volume centos:7 /bin/bash</span><br><span class="line"></span><br><span class="line">2.创建启动c1、c2容器，使用--volumes-from 参数设置数据卷</span><br><span class="line">docker run -it --name=c1 --volume-from c3 centos:7 /bin/bash</span><br><span class="line"></span><br><span class="line">docker run -it --name=c2 --volume-from c3 centos:7 /bin/bash</span><br></pre></td></tr></table></figure>
-
-<h4 id="五、DockerFile"><a href="#五、DockerFile" class="headerlink" title="五、DockerFile"></a>五、DockerFile</h4><blockquote>
-<p>1.Docker镜像本质是什么？</p>
-<ul>
-<li>是一个分层文件系统。</li>
-</ul>
-<p>2.Docker中一个Centos镜像为什么只有200MB，而一个centos操作系统的ios文件要几个G?</p>
-<ul>
-<li>Centos的ios镜像包含bootfs和rootfs，而docker的centos镜像复用操作系统的bootfs，只有rootfs和其他镜像层。</li>
-</ul>
-<p>3.Docker中一个tomcat镜像为什么有500MB，而一个tomcat安装包只有70多MB？</p>
-<ul>
-<li>由于docker中镜像是分层的，tomcat虽然只有70多MB，但他需要依赖于父镜像和基础镜像，所以整个对外暴露的tomcat镜像大小有500多MB。</li>
-</ul>
-</blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">镜像制作</span><br><span class="line">1.容器转为镜像</span><br><span class="line">docker commit 容器id 镜像名称:版本号</span><br><span class="line">docker save -o 压缩文件名称 镜像名称:版本号</span><br><span class="line">docker load -i 压缩文件名称</span><br><span class="line"></span><br><span class="line">2.dockerfile</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 将容器转换为镜像</span></span><br><span class="line">docker commit 3db0103dc257 xs_centos:1.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 保存为压缩文件</span></span><br><span class="line">docker save -o xs_centos.tar xs_centos:1.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 恢复镜像</span></span><br><span class="line">docker load -i xs_centos.tar</span><br></pre></td></tr></table></figure>
-
-<p><img "" class="lazyload placeholder" data-original="https://i.loli.net/2021/03/10/K1Di9IgUr6CNejQ.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="img"></p>
-<img "" class="lazyload placeholder" data-original="https://i.loli.net/2021/03/10/LjuNzAPYBsE4CWG.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210310221148742" style="zoom:80%;" />
-
-<p><img "" class="lazyload placeholder" data-original="https://i.loli.net/2021/03/10/r8fhsGeQypt1Lqm.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210310221409390"></p>
+<p>你好啊，未来越来越好哦</p>
+<h1 id="数据库表目录"><a href="#数据库表目录" class="headerlink" title="数据库表目录"></a>数据库表目录</h1><table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">表名</th>
+<th align="center">表说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center"><a href="#admin">admin</a></td>
+<td align="center">管理员</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center"><a href="#collect">collect</a></td>
+<td align="center">收藏</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center"><a href="#comment">comment</a></td>
+<td align="center">评论</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center"><a href="#list_song">list_song</a></td>
+<td align="center">歌单里的歌</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center"><a href="#rank">rank</a></td>
+<td align="center">打分表</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center"><a href="#singer">singer</a></td>
+<td align="center">歌手</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center"><a href="#song">song</a></td>
+<td align="center">歌曲</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center"><a href="#song_list">song_list</a></td>
+<td align="center">歌单</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center"><a href="#user">user</a></td>
+<td align="center">用户</td>
+</tr>
+</tbody></table>
+<h2 id="admin"><a href="#admin" class="headerlink" title="admin "></a><a name="admin">admin </a></h2><table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">小数位数</th>
+<th align="center">主键</th>
+<th align="center">自增</th>
+<th align="center">允许空</th>
+<th align="center">默认值</th>
+<th align="center">列说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">id</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">name</td>
+<td align="center">varchar</td>
+<td align="center">30</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">用户名</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">password</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">密码</td>
+</tr>
+</tbody></table>
+<h2 id="collect"><a href="#collect" class="headerlink" title="collect "></a><a name="collect">collect </a></h2><table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">小数位数</th>
+<th align="center">主键</th>
+<th align="center">自增</th>
+<th align="center">允许空</th>
+<th align="center">默认值</th>
+<th align="center">列说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">id</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">user_id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">用户id</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">type</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">0</td>
+<td align="center">类型</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">song_id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">歌曲id</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">song_list_id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">歌单id</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">create_time</td>
+<td align="center">datetime</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">创建时间</td>
+</tr>
+</tbody></table>
+<h2 id="comment"><a href="#comment" class="headerlink" title="comment "></a><a name="comment">comment </a></h2><table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">小数位数</th>
+<th align="center">主键</th>
+<th align="center">自增</th>
+<th align="center">允许空</th>
+<th align="center">默认值</th>
+<th align="center">列说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">id</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">user_id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">用户id</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">type</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">类型</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">song_id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">歌曲id</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">song_list_id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">歌单id</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">content</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">评论内容</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">create_time</td>
+<td align="center">datetime</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">创建时间</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">up</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center">0</td>
+<td align="center">点赞数</td>
+</tr>
+</tbody></table>
+<h2 id="list-song"><a href="#list-song" class="headerlink" title="list_song "></a><a name="list_song">list_song </a></h2><table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">小数位数</th>
+<th align="center">主键</th>
+<th align="center">自增</th>
+<th align="center">允许空</th>
+<th align="center">默认值</th>
+<th align="center">列说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">id</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">song_id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">歌曲id</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">song_list_id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">歌单id</td>
+</tr>
+</tbody></table>
+<h2 id="rank"><a href="#rank" class="headerlink" title="rank "></a><a name="rank">rank </a></h2><table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">小数位数</th>
+<th align="center">主键</th>
+<th align="center">自增</th>
+<th align="center">允许空</th>
+<th align="center">默认值</th>
+<th align="center">列说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">id</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">song_list_id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">歌曲id</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">user_id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">用户id</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">score</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">得分</td>
+</tr>
+</tbody></table>
+<h2 id="singer"><a href="#singer" class="headerlink" title="singer "></a><a name="singer">singer </a></h2><table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">小数位数</th>
+<th align="center">主键</th>
+<th align="center">自增</th>
+<th align="center">允许空</th>
+<th align="center">默认值</th>
+<th align="center">列说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">id</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">name</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">名称</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">sex</td>
+<td align="center">tinyint</td>
+<td align="center"></td>
+<td align="center">0</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center">1</td>
+<td align="center">性别</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">picture</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">歌手图片</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">birthday</td>
+<td align="center">datetime</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">生日</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">location</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">地区</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">introduction</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">介绍</td>
+</tr>
+</tbody></table>
+<h2 id="song"><a href="#song" class="headerlink" title="song "></a><a name="song">song </a></h2><table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">小数位数</th>
+<th align="center">主键</th>
+<th align="center">自增</th>
+<th align="center">允许空</th>
+<th align="center">默认值</th>
+<th align="center">列说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">id</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">singer_id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">歌曲id</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">name</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">名称</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">introduction</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">介绍</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">create_time</td>
+<td align="center">datetime</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">创建时间</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">update_time</td>
+<td align="center">datetime</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">更新时间</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">picture</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">图片</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">lyric</td>
+<td align="center">text</td>
+<td align="center">65535</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">歌词</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">url</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">链接</td>
+</tr>
+</tbody></table>
+<h2 id="song-list"><a href="#song-list" class="headerlink" title="song_list "></a><a name="song_list">song_list </a></h2><table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">小数位数</th>
+<th align="center">主键</th>
+<th align="center">自增</th>
+<th align="center">允许空</th>
+<th align="center">默认值</th>
+<th align="center">列说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">id</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">title</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">歌单名称</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">picture</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">图片</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">introduction</td>
+<td align="center">text</td>
+<td align="center">65535</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">介绍</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">style</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">风格</td>
+</tr>
+</tbody></table>
+<h2 id="user"><a href="#user" class="headerlink" title="user "></a><a name="user" id="user">user </a></h2><table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">小数位数</th>
+<th align="center">主键</th>
+<th align="center">自增</th>
+<th align="center">允许空</th>
+<th align="center">默认值</th>
+<th align="center">列说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">id</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">username</td>
+<td align="center">varchar</td>
+<td align="center">30</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">用户名</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">password</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">密码</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">sex</td>
+<td align="center">tinyint</td>
+<td align="center"></td>
+<td align="center">0</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center">1</td>
+<td align="center">性别</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">telephone</td>
+<td align="center">varchar</td>
+<td align="center">15</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">电话</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">email</td>
+<td align="center">varchar</td>
+<td align="center">30</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">邮件</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">birthday</td>
+<td align="center">datetime</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">生日</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">introduction</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">介绍</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">location</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">地区</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">avator</td>
+<td align="center">varchar</td>
+<td align="center">255</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">个人图像</td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">create_time</td>
+<td align="center">datetime</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">创建时间</td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">update_time</td>
+<td align="center">datetime</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center">更新时间</td>
+</tr>
+</tbody></table>
 
       </div>
       
@@ -659,7 +1496,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2021/03/10/docker-an-zhuang-yu-ji-ben-ming-ling/" target="_blank" title="docker安装与基本命令">https://abcdefgxs.github.io/2021/03/10/docker-an-zhuang-yu-ji-ben-ming-ling/</a>
+    <a href="/2021/03/11/music-biao-de-jie-gou/" target="_blank" title="music表的结构">https://abcdefgxs.github.io/2021/03/11/music-biao-de-jie-gou/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -677,54 +1514,24 @@
 
 
 
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/medias/2.jpg" style="background-size: cover; 
-      background-position: center center;">
-    </div>
-    <a href="/2021/03/11/music-biao-de-jie-gou/" class="post-nav-link">
-      <div class="title">
-        <i class="fa fa-angle-left"></i> 上一篇:
-        <div>music表的结构</div>
-      </div>
-      
-      <!-- <div class="content">
-        music表的结构
-
-你好啊，未来越来越好哦
-数据库表目录
-
-
-序号
-表名
-表说明
-
-
-
-1
-admin
-管理员
-
-
-2
-      </div> -->
-    </a>
-  </div>
-
 
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="https://i.loli.net/2021/03/11/ZpiP1bguhLx3EWN.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/medias/13.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/03/10/hello-world/" class="post-nav-link">
+    <a href="/2021/03/10/docker-an-zhuang-yu-ji-ben-ming-ling/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
-        <div>hello world</div>
+        <div>docker安装与基本命令</div>
       </div>
       <!-- <div class="content">
-        1234int main()&#123;	printf(&quot;hello world!&quot;);    re
+        一、docker安装1.更新yum源。
+1yum -y update
+
+2.安装epel源。
+1yum install 
       </div> -->
     </a>
   </div>

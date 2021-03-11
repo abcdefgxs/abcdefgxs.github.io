@@ -6,7 +6,7 @@
   <link href="https://abcdefgxs.github.io/atom.xml" rel="self"/>
   
   <link href="https://abcdefgxs.github.io/"/>
-  <updated>2021-03-10T15:07:05.794Z</updated>
+  <updated>2021-03-11T11:09:48.417Z</updated>
   <id>https://abcdefgxs.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>music表的结构</title>
+    <link href="https://abcdefgxs.github.io/2021/03/11/music-biao-de-jie-gou/"/>
+    <id>https://abcdefgxs.github.io/2021/03/11/music-biao-de-jie-gou/</id>
+    <published>2021-03-11T10:56:13.000Z</published>
+    <updated>2021-03-11T11:09:48.417Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 class=&quot;bamboo-h &quot; id=&quot;music表的结构&quot;&gt;music表的结构&lt;/h2&gt;&lt;br/&gt;
+
+&lt;p&gt;你好啊，未来越来越好哦&lt;/p&gt;
+&lt;h1 id=&quot;数据库表目录&quot;&gt;&lt;a href=&quot;#数据库表目录&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="后端" scheme="https://abcdefgxs.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="mysql" scheme="https://abcdefgxs.github.io/tags/mysql/"/>
+    
+    <category term="markdown" scheme="https://abcdefgxs.github.io/tags/markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>docker安装与基本命令</title>
