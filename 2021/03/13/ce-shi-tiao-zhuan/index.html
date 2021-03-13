@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>music表的结构 | 欢迎来到xs的博客</title>
+  <title>测试跳转 | 欢迎来到xs的博客</title>
 
   
     
@@ -540,7 +540,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/2.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/./medias/12.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
@@ -551,7 +551,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
           <script>
             var typed = new Typed("#post-detail-header-title", {
-              strings: ['music表的结构'],
+              strings: ['测试跳转'],
               startDelay: 100,
               typeSpeed: 100,
               loop: false,
@@ -576,7 +576,7 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2021-03-11</span>
+        <span class="post-time">2021-03-13</span>
       </div>
       
       <div class="post-tags-categories">
@@ -584,16 +584,12 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/%E5%90%8E%E7%AB%AF/" class="">
-              后端
-            </a>
-          
-            <a href="/tags/mysql/" class="">
-              mysql
-            </a>
-          
             <a href="/tags/markdown/" class="">
               markdown
+            </a>
+          
+            <a href="/tags/%E6%B5%8B%E8%AF%95/" class="">
+              测试
             </a>
           
         </div>
@@ -601,891 +597,60 @@
         
       </div>
       <div class="post-content">
-        <h2 class="bamboo-h " id="music表的结构">music表的结构</h2><br/>
+        <p><a href="#end">点击跳转</a></p>
+<span class='pbg info'>我是一个高亮文本</span>
 
-<p>你好啊，未来越来越好哦</p>
-<h1 id="数据库表目录"><a href="#数据库表目录" class="headerlink" title="数据库表目录"></a>数据库表目录</h1><table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">表名</th>
-<th align="center">表说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center"><a href="#admin">admin</a></td>
-<td align="center">管理员</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center"><a href="#collect">collect</a></td>
-<td align="center">收藏</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center"><a href="#comment">comment</a></td>
-<td align="center">评论</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center"><a href="#list_song">list_song</a></td>
-<td align="center">歌单里的歌</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center"><a href="#rank">rank</a></td>
-<td align="center">打分表</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="center"><a href="#singer">singer</a></td>
-<td align="center">歌手</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="center"><a href="#song">song</a></td>
-<td align="center">歌曲</td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td align="center"><a href="#song_list">song_list</a></td>
-<td align="center">歌单</td>
-</tr>
-<tr>
-<td align="center">9</td>
-<td align="center"><a href="#user">user</a></td>
-<td align="center">用户</td>
-</tr>
-</tbody></table>
-<h2 id="admin"><a href="#admin" class="headerlink" title="admin "></a><a name="admin">admin </a></h2><table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">列名</th>
-<th align="center">数据类型</th>
-<th align="center">长度</th>
-<th align="center">小数位数</th>
-<th align="center">主键</th>
-<th align="center">自增</th>
-<th align="center">允许空</th>
-<th align="center">默认值</th>
-<th align="center">列说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">id</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">name</td>
-<td align="center">varchar</td>
-<td align="center">30</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">用户名</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">password</td>
-<td align="center">varchar</td>
-<td align="center">20</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">密码</td>
-</tr>
-</tbody></table>
-<h2 id="collect"><a href="#collect" class="headerlink" title="collect "></a><a name="collect">collect </a></h2><table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">列名</th>
-<th align="center">数据类型</th>
-<th align="center">长度</th>
-<th align="center">小数位数</th>
-<th align="center">主键</th>
-<th align="center">自增</th>
-<th align="center">允许空</th>
-<th align="center">默认值</th>
-<th align="center">列说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">id</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">user_id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">用户id</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">type</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">0</td>
-<td align="center">类型</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">song_id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">歌曲id</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">song_list_id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">歌单id</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="center">create_time</td>
-<td align="center">datetime</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">创建时间</td>
-</tr>
-</tbody></table>
-<h2 id="comment"><a href="#comment" class="headerlink" title="comment "></a><a name="comment">comment </a></h2><table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">列名</th>
-<th align="center">数据类型</th>
-<th align="center">长度</th>
-<th align="center">小数位数</th>
-<th align="center">主键</th>
-<th align="center">自增</th>
-<th align="center">允许空</th>
-<th align="center">默认值</th>
-<th align="center">列说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">id</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">user_id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">用户id</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">type</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">类型</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">song_id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">歌曲id</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">song_list_id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">歌单id</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="center">content</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">评论内容</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="center">create_time</td>
-<td align="center">datetime</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">创建时间</td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td align="center">up</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center">0</td>
-<td align="center">点赞数</td>
-</tr>
-</tbody></table>
-<h2 id="list-song"><a href="#list-song" class="headerlink" title="list_song "></a><a name="list_song">list_song </a></h2><table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">列名</th>
-<th align="center">数据类型</th>
-<th align="center">长度</th>
-<th align="center">小数位数</th>
-<th align="center">主键</th>
-<th align="center">自增</th>
-<th align="center">允许空</th>
-<th align="center">默认值</th>
-<th align="center">列说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">id</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">song_id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">歌曲id</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">song_list_id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">歌单id</td>
-</tr>
-</tbody></table>
-<h2 id="rank"><a href="#rank" class="headerlink" title="rank "></a><a name="rank">rank </a></h2><table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">列名</th>
-<th align="center">数据类型</th>
-<th align="center">长度</th>
-<th align="center">小数位数</th>
-<th align="center">主键</th>
-<th align="center">自增</th>
-<th align="center">允许空</th>
-<th align="center">默认值</th>
-<th align="center">列说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">id</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">song_list_id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">歌曲id</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">user_id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">用户id</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">score</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">得分</td>
-</tr>
-</tbody></table>
-<h2 id="singer"><a href="#singer" class="headerlink" title="singer "></a><a name="singer">singer </a></h2><table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">列名</th>
-<th align="center">数据类型</th>
-<th align="center">长度</th>
-<th align="center">小数位数</th>
-<th align="center">主键</th>
-<th align="center">自增</th>
-<th align="center">允许空</th>
-<th align="center">默认值</th>
-<th align="center">列说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">id</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">name</td>
-<td align="center">varchar</td>
-<td align="center">50</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">名称</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">sex</td>
-<td align="center">tinyint</td>
-<td align="center"></td>
-<td align="center">0</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center">1</td>
-<td align="center">性别</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">picture</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">歌手图片</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">birthday</td>
-<td align="center">datetime</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">生日</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="center">location</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">地区</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="center">introduction</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">介绍</td>
-</tr>
-</tbody></table>
-<h2 id="song"><a href="#song" class="headerlink" title="song "></a><a name="song">song </a></h2><table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">列名</th>
-<th align="center">数据类型</th>
-<th align="center">长度</th>
-<th align="center">小数位数</th>
-<th align="center">主键</th>
-<th align="center">自增</th>
-<th align="center">允许空</th>
-<th align="center">默认值</th>
-<th align="center">列说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">id</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">singer_id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">歌曲id</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">name</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">名称</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">introduction</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">介绍</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">create_time</td>
-<td align="center">datetime</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">创建时间</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="center">update_time</td>
-<td align="center">datetime</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">更新时间</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="center">picture</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">图片</td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td align="center">lyric</td>
-<td align="center">text</td>
-<td align="center">65535</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">歌词</td>
-</tr>
-<tr>
-<td align="center">9</td>
-<td align="center">url</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">链接</td>
-</tr>
-</tbody></table>
-<h2 id="song-list"><a href="#song-list" class="headerlink" title="song_list "></a><a name="song_list">song_list </a></h2><table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">列名</th>
-<th align="center">数据类型</th>
-<th align="center">长度</th>
-<th align="center">小数位数</th>
-<th align="center">主键</th>
-<th align="center">自增</th>
-<th align="center">允许空</th>
-<th align="center">默认值</th>
-<th align="center">列说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">id</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">title</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">歌单名称</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">picture</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">图片</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">introduction</td>
-<td align="center">text</td>
-<td align="center">65535</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">介绍</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">style</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">风格</td>
-</tr>
-</tbody></table>
-<h2 id="user"><a href="#user" class="headerlink" title="user "></a><a name="user" id="user">user </a></h2><table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">列名</th>
-<th align="center">数据类型</th>
-<th align="center">长度</th>
-<th align="center">小数位数</th>
-<th align="center">主键</th>
-<th align="center">自增</th>
-<th align="center">允许空</th>
-<th align="center">默认值</th>
-<th align="center">列说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">id</td>
-<td align="center">int</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">id</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">username</td>
-<td align="center">varchar</td>
-<td align="center">30</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">用户名</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">password</td>
-<td align="center">varchar</td>
-<td align="center">20</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">密码</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">sex</td>
-<td align="center">tinyint</td>
-<td align="center"></td>
-<td align="center">0</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center">1</td>
-<td align="center">性别</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">telephone</td>
-<td align="center">varchar</td>
-<td align="center">15</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">电话</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="center">email</td>
-<td align="center">varchar</td>
-<td align="center">30</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">邮件</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="center">birthday</td>
-<td align="center">datetime</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">生日</td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td align="center">introduction</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">介绍</td>
-</tr>
-<tr>
-<td align="center">9</td>
-<td align="center">location</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">地区</td>
-</tr>
-<tr>
-<td align="center">10</td>
-<td align="center">avator</td>
-<td align="center">varchar</td>
-<td align="center">255</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">个人图像</td>
-</tr>
-<tr>
-<td align="center">11</td>
-<td align="center">create_time</td>
-<td align="center">datetime</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">创建时间</td>
-</tr>
-<tr>
-<td align="center">12</td>
-<td align="center">update_time</td>
-<td align="center">datetime</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center">更新时间</td>
-</tr>
-</tbody></table>
+
+
+<div class="note "><p>我有一只小毛驴，我从来都不骑。</p></div>
+
+
+
+<h2 class="bamboo-h " id="这是一个title,red">这是一个title,red</h2><br/>
+
+<span class='pbg info'>我是一个高亮文本</span>
+
+
+
+<div class="note "><p>我有一只小毛驴，我从来都不骑。</p></div>
+
+
+
+<h2 class="bamboo-h " id="这是一个title,red">这是一个title,red</h2><br/>
+
+<span class='pbg info'>我是一个高亮文本</span>
+
+
+
+<div class="note "><p>我有一只小毛驴，我从来都不骑。</p></div>
+
+
+
+<h2 class="bamboo-h " id="这是一个title,red">这是一个title,red</h2><br/>
+
+<span class='pbg info'>我是一个高亮文本</span>
+
+
+
+<div class="note "><p>我有一只小毛驴，我从来都不骑。</p></div>
+
+
+
+<h2 class="bamboo-h " id="这是一个title,red">这是一个title,red</h2><br/>
+
+<span class='pbg info'>我是一个高亮文本</span>
+
+
+
+<div class="note "><p>我有一只小毛驴，我从来都不骑。</p></div>
+
+
+
+<h2 class="bamboo-h " id="这是一个title,red">这是一个title,red</h2><br/>
+
+
+
+<p><a name="end">这是底部</a></p>
 
       </div>
       
@@ -1496,7 +661,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2021/03/11/music-biao-de-jie-gou/" target="_blank" title="music表的结构">https://abcdefgxs.github.io/2021/03/11/music-biao-de-jie-gou/</a>
+    <a href="/2021/03/13/ce-shi-tiao-zhuan/" target="_blank" title="测试跳转">https://abcdefgxs.github.io/2021/03/13/ce-shi-tiao-zhuan/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -1514,53 +679,37 @@
 
 
 
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/./medias/12.jpg" style="background-size: cover; 
-      background-position: center center;">
-    </div>
-    <a href="/2021/03/13/ce-shi-tiao-zhuan/" class="post-nav-link">
-      <div class="title">
-        <i class="fa fa-angle-left"></i> 上一篇:
-        <div>测试跳转</div>
-      </div>
-      
-      <!-- <div class="content">
-        点击跳转
-我是一个高亮文本
-
-
-
-我有一只小毛驴，我从来都不骑。
-
-
-
-这是一个title,red
-
-我是一个高亮文本
-
-      </div> -->
-    </a>
-  </div>
-
 
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/medias/13.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/medias/2.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/03/10/docker-an-zhuang-yu-ji-ben-ming-ling/" class="post-nav-link">
+    <a href="/2021/03/11/music-biao-de-jie-gou/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
-        <div>docker安装与基本命令</div>
+        <div>music表的结构</div>
       </div>
       <!-- <div class="content">
-        一、docker安装1.更新yum源。
-1yum -y update
+        music表的结构
 
-2.安装epel源。
-1yum install 
+你好啊，未来越来越好哦
+数据库表目录
+
+
+序号
+表名
+表说明
+
+
+
+1
+admin
+管理员
+
+
+2
       </div> -->
     </a>
   </div>
