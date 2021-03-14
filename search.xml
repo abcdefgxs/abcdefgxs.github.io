@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>vscode 更换背景图片</title>
+      <link href="2021/03/14/vscode-geng-huan-bei-jing-tu-pian/"/>
+      <url>2021/03/14/vscode-geng-huan-bei-jing-tu-pian/</url>
+      
+        <content type="html"><![CDATA[<h2 class="bamboo-h red" id="第一种方法">第一种方法</h2><br/><h4 id="1-直接修改vscode的样式"><a href="#1-直接修改vscode的样式" class="headerlink" title="1.直接修改vscode的样式"></a>1.直接修改vscode的样式</h4><p>在I:\Microsoft VS Code\resources\app\out\vs\workbench\workbench.desktop.main.css内添加一下代码</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> <span class="selector-tag">body</span> &#123;</span><br><span class="line"><span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">./123.jpg</span>);</span><br><span class="line"><span class="attribute">background-size</span>: <span class="number">100%</span>;</span><br><span class="line"><span class="attribute">opacity</span>: <span class="number">0.9</span>;</span><br><span class="line"><span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img "" class="lazyload placeholder" data-original="https://i.loli.net/2021/03/14/bU5RCtdLuriwgqW.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210314232143787"></p><blockquote><p>注意图片不要使用绝对路径，否则会报一下错误 Not allowed to load local resource: file// XXXX 的错误，<strong>谷歌浏览器因为安全性的原因，无法让客户端浏览到磁盘（因为这样会被黑客加以利用</strong></p></blockquote><h4 id="2-下载background-cover插件"><a href="#2-下载background-cover插件" class="headerlink" title="2.下载background-cover插件"></a>2.下载background-cover插件</h4>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 业余爱好 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vuex学习</title>
       <link href="2021/03/14/vuex-xue-xi/"/>
       <url>2021/03/14/vuex-xue-xi/</url>

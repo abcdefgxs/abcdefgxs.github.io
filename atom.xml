@@ -6,7 +6,7 @@
   <link href="https://abcdefgxs.github.io/atom.xml" rel="self"/>
   
   <link href="https://abcdefgxs.github.io/"/>
-  <updated>2021-03-14T10:04:10.993Z</updated>
+  <updated>2021-03-14T15:23:38.925Z</updated>
   <id>https://abcdefgxs.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vscode 更换背景图片</title>
+    <link href="https://abcdefgxs.github.io/2021/03/14/vscode-geng-huan-bei-jing-tu-pian/"/>
+    <id>https://abcdefgxs.github.io/2021/03/14/vscode-geng-huan-bei-jing-tu-pian/</id>
+    <published>2021-03-14T15:11:11.000Z</published>
+    <updated>2021-03-14T15:23:38.925Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 class=&quot;bamboo-h red&quot; id=&quot;第一种方法&quot;&gt;第一种方法&lt;/h2&gt;&lt;br/&gt;
+
+&lt;h4 id=&quot;1-直接修改vscode的样式&quot;&gt;&lt;a href=&quot;#1-直接修改vscode的样式&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="前端" scheme="https://abcdefgxs.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="业余爱好" scheme="https://abcdefgxs.github.io/tags/%E4%B8%9A%E4%BD%99%E7%88%B1%E5%A5%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>Vuex学习</title>
