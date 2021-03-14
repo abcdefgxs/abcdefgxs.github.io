@@ -6,7 +6,7 @@
   <link href="https://abcdefgxs.github.io/atom.xml" rel="self"/>
   
   <link href="https://abcdefgxs.github.io/"/>
-  <updated>2021-03-13T10:42:36.370Z</updated>
+  <updated>2021-03-14T02:08:21.457Z</updated>
   <id>https://abcdefgxs.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vuex学习</title>
+    <link href="https://abcdefgxs.github.io/2021/03/14/vuex-xue-xi/"/>
+    <id>https://abcdefgxs.github.io/2021/03/14/vuex-xue-xi/</id>
+    <published>2021-03-14T02:04:11.000Z</published>
+    <updated>2021-03-14T02:08:21.457Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;{ title h2, Vuex的概念, red }&lt;/p&gt;
+&lt;h3 id=&quot;Vuex的概念&quot;&gt;&lt;a href=&quot;#Vuex的概念&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Vuex" scheme="https://abcdefgxs.github.io/tags/Vuex/"/>
+    
+    <category term="vue" scheme="https://abcdefgxs.github.io/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>测试跳转</title>
