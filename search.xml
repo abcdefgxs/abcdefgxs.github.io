@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>UML图六种箭头含义(太容易记混了)</title>
+      <link href="2021/03/15/uml-tu-liu-chong-jian-tou-han-yi-tai-rong-yi-ji-hun-liao/"/>
+      <url>2021/03/15/uml-tu-liu-chong-jian-tou-han-yi-tai-rong-yi-ji-hun-liao/</url>
+      
+        <content type="html"><![CDATA[<h2 class="bamboo-h red" id="UML图六种箭头含义">UML图六种箭头含义</h2><br/><div class="note info"><p>泛化： 表示一个更泛化的元素和一个更具体的元素之间的关系。泛化是用于对继承进行建模的UML元素。在Java中，用extends关键字表示。 表示方式：用实线空心箭头表示。</p></div>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> UML </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>安装和使用vue-router</title>
       <link href="2021/03/15/vue-router-ji-ben-shi-yong/"/>
       <url>2021/03/15/vue-router-ji-ben-shi-yong/</url>

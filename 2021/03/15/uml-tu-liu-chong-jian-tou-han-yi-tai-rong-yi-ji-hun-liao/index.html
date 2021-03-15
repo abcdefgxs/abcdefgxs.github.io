@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>安装和使用vue-router | 欢迎来到xs的博客</title>
+  <title>UML图六种箭头含义(太容易记混了) | 欢迎来到xs的博客</title>
 
   
     
@@ -540,7 +540,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/./medias/6.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/./medisa/7.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
@@ -551,7 +551,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
           <script>
             var typed = new Typed("#post-detail-header-title", {
-              strings: ['安装和使用vue-router'],
+              strings: ['UML图六种箭头含义(太容易记混了)'],
               startDelay: 100,
               typeSpeed: 100,
               loop: false,
@@ -584,12 +584,8 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/%E5%89%8D%E7%AB%AF/" class="">
-              前端
-            </a>
-          
-            <a href="/tags/Vue-router/" class="">
-              Vue-router
+            <a href="/tags/UML/" class="">
+              UML
             </a>
           
         </div>
@@ -597,64 +593,11 @@
         
       </div>
       <div class="post-content">
-        <h2 class="bamboo-h red" id="不刷新网页更换url的两种方式">不刷新网页更换url的两种方式</h2><br/>
+        <h2 class="bamboo-h red" id="UML图六种箭头含义">UML图六种箭头含义</h2><br/>
+
+<div class="note info"><p>泛化： 表示一个更泛化的元素和一个更具体的元素之间的关系。泛化是用于对继承进行建模的UML元素。在Java中，用extends关键字表示。 表示方式：用实线空心箭头表示。</p></div>
 
 
-
-<h5 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h5><p>改变location的hash值</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">location.hash = <span class="string">&quot;home&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">history.pushState(&#123;&#125;,<span class="string">&quot;&quot;</span>,<span class="string">&quot;demo&quot;</span>)   <span class="comment">// 相当于入栈,网页显示的url为最新栈顶的元素</span></span><br><span class="line">history.back()   <span class="comment">// 退栈  相当于 history.go(-1) </span></span><br><span class="line">history.go(-<span class="number">1</span>)  <span class="comment">//弹出一个</span></span><br><span class="line">history.forward()  <span class="comment">// 相当于 history.go(1) </span></span><br><span class="line"></span><br><span class="line">history.replaceState(&#123;&#125;,<span class="string">&quot;&quot;</span>,<span class="string">&quot;home&quot;</span>)  <span class="comment">//替换url,不能返回</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="安装和使用vue-router"><a href="#安装和使用vue-router" class="headerlink" title="安装和使用vue-router"></a>安装和使用vue-router</h4><p>步骤一: 安装vue-router</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install vue-router --save</span><br></pre></td></tr></table></figure>
-
-<p>步骤二: 在模块化工程中使用它(因为是一个插件, 所以可以通过Vue.use()来安装路由功能) 第一步：导入路由对象，并且调用 Vue.use(VueRouter)</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Router <span class="keyword">from</span> <span class="string">&quot;vue-router&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>第二步：创建路由实例，并且传入路由映射配置</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span></span><br><span class="line"><span class="keyword">import</span> Router <span class="keyword">from</span> <span class="string">&quot;vue-router&quot;</span></span><br><span class="line"><span class="keyword">import</span> home <span class="keyword">from</span> <span class="string">&quot;../components/home&quot;</span></span><br><span class="line"><span class="keyword">import</span> about <span class="keyword">from</span> <span class="string">&quot;../components/about&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用Vue.use(插件) 安装插件</span></span><br><span class="line">Vue.use(Router);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> Router(&#123;</span><br><span class="line">    routes: [</span><br><span class="line">        &#123;</span><br><span class="line">            path:<span class="string">&quot;/Home&quot;</span>,</span><br><span class="line">            component: home</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            path:<span class="string">&quot;/About&quot;</span>,</span><br><span class="line">            component: about</span><br><span class="line">        &#125;]</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> router</span><br></pre></td></tr></table></figure>
-
-<p>第三步：在Vue实例中挂载创建的路由实例</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  render: <span class="function"><span class="params">h</span> =&gt;</span> h(App),</span><br><span class="line">  store:store,</span><br><span class="line">  router:router</span><br><span class="line">&#125;).$mount(<span class="string">&#x27;#app&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<span class='pbg info'>使用vue-router的步骤:</span>
-
-<ul>
-<li>第一步: 创建路由组件</li>
-<li>第二步: 配置路由映射: 组件和路径映射关系</li>
-<li>第三步: 使用路由: 通过<router-link>和<router-view></li>
-</ul>
-<div class="note info"><p>路径不显示#</p></div>
-
-<span class='pbg info'>在创建Router对象时，将mode模式设置为history</span>
-
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> Router(&#123;</span><br><span class="line">    routes: [</span><br><span class="line">        &#123;</span><br><span class="line">            path:<span class="string">&quot;&quot;</span>,</span><br><span class="line">            redirect: <span class="string">&quot;/Home&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            path:<span class="string">&quot;/Home&quot;</span>,</span><br><span class="line">            component: home</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            path:<span class="string">&quot;/About&quot;</span>,</span><br><span class="line">            component: about</span><br><span class="line">        &#125;],</span><br><span class="line">    mode:<span class="string">&quot;history&quot;</span>   <span class="comment">// history方式，不显示#号，默认是hash的模式</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<div class="note info"><p>router-link补充</p></div>
-
-<blockquote>
-<p>在前面的router-link中, 我们只是使用了一个属性: to, 用于指定跳转的路径. router-link还有一些其他属性:</p>
- <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="xml"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">&quot;/Home&quot;</span> <span class="attr">tag</span>=<span class="string">&quot;button&quot;</span> <span class="attr">replace</span> <span class="attr">active-class</span>=<span class="string">&quot;active&quot;</span>&gt;</span>首页<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>tag: tag可以指定router-link之后渲染成什么组件, 比如上面的代码会被渲染成一个button元素, 而不是a标签</li>
-<li>replace: replace不会留下history记录, 所以指定replace的情况下, 后退键返回不能返回到上一个页面中</li>
-<li>active-class: 当router-link对应的路由匹配成功时, 会自动给当前元素设置一个router-link-active的class, 设置active-class可以修改默认的名称. 在进行高亮显示的导航菜单或者底部tabbar时, 会使用到该类. 但是通常不会修改类的属性, 会直接使用默认的router-link-active即可. </li>
-</ul>
-</blockquote>
-<div class="note info"><p>通过代码方式改变路径</p></div>
-
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;button @click=<span class="string">&quot;homeClick&quot;</span>&gt;首页&lt;/button&gt;</span><br><span class="line">&lt;button @click=<span class="string">&quot;aboutClick&quot;</span>&gt;关于&lt;/button&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 通过代码方式修改路径</span></span><br><span class="line"><span class="function"><span class="title">homeClick</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.$router.push(<span class="string">&quot;/Home&quot;</span>);</span><br><span class="line">  <span class="built_in">this</span>.$router.replace(<span class="string">&quot;/Home&quot;</span>); <span class="comment">// 不能返回</span></span><br><span class="line">&#125;,</span><br><span class="line"><span class="function"><span class="title">aboutClick</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.$router.push(<span class="string">&quot;/About&quot;</span>);</span><br><span class="line">  <span class="built_in">this</span>.$router.replace(<span class="string">&quot;/About&quot;</span>); <span class="comment">// 不能返回</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<div class="note info"><p>路由懒加载</p></div>
-
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 路由懒加载</span></span><br><span class="line"><span class="keyword">const</span> home = <span class="function">()=&gt;</span> <span class="keyword">import</span>(<span class="string">&quot;../components/home&quot;</span>)</span><br><span class="line"><span class="keyword">const</span> about = <span class="function">()=&gt;</span> <span class="keyword">import</span>(<span class="string">&quot;../components/about&quot;</span>)</span><br><span class="line"><span class="keyword">const</span> user = <span class="function">()=&gt;</span> <span class="keyword">import</span>(<span class="string">&quot;../components/user&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<details ><summary> 路由嵌套 </summary>
-              <div class='content'>
-              <p><strong>新建两个组件news和message</strong></p><p>==在store/index.js中添加一下内容==</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">            path: <span class="string">&quot;/Home&quot;</span>,</span><br><span class="line">            component: home,</span><br><span class="line">            children: [   <span class="comment">// 路由嵌套</span></span><br><span class="line">                &#123;</span><br><span class="line">                    path:<span class="string">&quot;&quot;</span>,</span><br><span class="line">                    redirect: <span class="string">&quot;news&quot;</span> </span><br><span class="line">                &#125;,</span><br><span class="line">                &#123;</span><br><span class="line">                    path: <span class="string">&quot;news&quot;</span>,   <span class="comment">// 这不需要加斜杠</span></span><br><span class="line">                    component: news</span><br><span class="line">                &#125;,</span><br><span class="line">                &#123;</span><br><span class="line">                    path: <span class="string">&quot;message&quot;</span>,</span><br><span class="line">                    component: message</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br></pre></td></tr></table></figure><p><strong>home.vue中</strong></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        这是home页面</span><br><span class="line">        <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">&quot;/home/news&quot;</span> <span class="attr">tag</span>=<span class="string">&quot;button&quot;</span>&gt;</span>新闻<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">&quot;/home/message&quot;</span> <span class="attr">tag</span>=<span class="string">&quot;button&quot;</span>&gt;</span>消息<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">router-view</span>&gt;</span><span class="tag">&lt;/<span class="name">router-view</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
-              </div>
-            </details>
       </div>
       
         <div class="copyright">
@@ -664,7 +607,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2021/03/15/vue-router-ji-ben-shi-yong/" target="_blank" title="安装和使用vue-router">https://abcdefgxs.github.io/2021/03/15/vue-router-ji-ben-shi-yong/</a>
+    <a href="/2021/03/15/uml-tu-liu-chong-jian-tou-han-yi-tai-rong-yi-ji-hun-liao/" target="_blank" title="UML图六种箭头含义(太容易记混了)">https://abcdefgxs.github.io/2021/03/15/uml-tu-liu-chong-jian-tou-han-yi-tai-rong-yi-ji-hun-liao/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -682,41 +625,25 @@
 
 
 
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/./medisa/7.jpg" style="background-size: cover; 
-      background-position: center center;">
-    </div>
-    <a href="/2021/03/15/uml-tu-liu-chong-jian-tou-han-yi-tai-rong-yi-ji-hun-liao/" class="post-nav-link">
-      <div class="title">
-        <i class="fa fa-angle-left"></i> 上一篇:
-        <div>UML图六种箭头含义(太容易记混了)</div>
-      </div>
-      
-      <!-- <div class="content">
-        UML图六种箭头含义
-
-泛化： 表示一个更泛化的元素和一个更具体的元素之间的关系。泛化是用于对继承进行建模的UML元素。
-      </div> -->
-    </a>
-  </div>
-
 
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/./medias/5.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/./medias/6.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/03/14/vscode-geng-huan-bei-jing-tu-pian/" class="post-nav-link">
+    <a href="/2021/03/15/vue-router-ji-ben-shi-yong/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
-        <div>vscode 更换背景图片</div>
+        <div>安装和使用vue-router</div>
       </div>
       <!-- <div class="content">
-        第一种方法
+        不刷新网页更换url的两种方式
 
-1.直接修改vscode的样式在I:\Microsoft VS Code\resources\app\ou
+
+
+第一种改变location的hash值
+1location.hash = &quo
       </div> -->
     </a>
   </div>

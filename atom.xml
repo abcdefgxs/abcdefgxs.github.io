@@ -6,7 +6,7 @@
   <link href="https://abcdefgxs.github.io/atom.xml" rel="self"/>
   
   <link href="https://abcdefgxs.github.io/"/>
-  <updated>2021-03-15T11:38:53.755Z</updated>
+  <updated>2021-03-15T12:46:27.456Z</updated>
   <id>https://abcdefgxs.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>UML图六种箭头含义(太容易记混了)</title>
+    <link href="https://abcdefgxs.github.io/2021/03/15/uml-tu-liu-chong-jian-tou-han-yi-tai-rong-yi-ji-hun-liao/"/>
+    <id>https://abcdefgxs.github.io/2021/03/15/uml-tu-liu-chong-jian-tou-han-yi-tai-rong-yi-ji-hun-liao/</id>
+    <published>2021-03-15T12:43:49.000Z</published>
+    <updated>2021-03-15T12:46:27.456Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 class=&quot;bamboo-h red&quot; id=&quot;UML图六种箭头含义&quot;&gt;UML图六种箭头含义&lt;/h2&gt;&lt;br/&gt;
+
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;泛化：</summary>
+        
+      
+    
+    
+    
+    
+    <category term="UML" scheme="https://abcdefgxs.github.io/tags/UML/"/>
+    
+  </entry>
   
   <entry>
     <title>安装和使用vue-router</title>
