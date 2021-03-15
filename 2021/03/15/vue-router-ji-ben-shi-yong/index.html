@@ -634,15 +634,22 @@
 <div class="note info"><p>router-link补充</p></div>
 
 <blockquote>
-<p>在前面的<router-link>中, 我们只是使用了一个属性: to, 用于指定跳转的路径. <router-link>还有一些其他属性:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;router-link to=<span class="string">&quot;/Home&quot;</span> tag=<span class="string">&quot;button&quot;</span> replace active-<span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;active&quot;</span>&gt;首页&lt;/router-link&gt;</span><br></pre></td></tr></table></figure>
-
+<p>在前面的router-link中, 我们只是使用了一个属性: to, 用于指定跳转的路径. router-link还有一些其他属性:</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="xml"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">&quot;/Home&quot;</span> <span class="attr">tag</span>=<span class="string">&quot;button&quot;</span> <span class="attr">replace</span> <span class="attr">active-class</span>=<span class="string">&quot;active&quot;</span>&gt;</span>首页<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <ul>
-<li>tag: tag可以指定<router-link>之后渲染成什么组件, 比如上面的代码会被渲染成一个<button>元素, 而不是<a></li>
+<li>tag: tag可以指定router-link之后渲染成什么组件, 比如上面的代码会被渲染成一个button元素, 而不是a标签</li>
 <li>replace: replace不会留下history记录, 所以指定replace的情况下, 后退键返回不能返回到上一个页面中</li>
-<li>active-class: 当<router-link>对应的路由匹配成功时, 会自动给当前元素设置一个router-link-active的class, 设置active-class可以修改默认的名称. 在进行高亮显示的导航菜单或者底部tabbar时, 会使用到该类. 但是通常不会修改类的属性, 会直接使用默认的router-link-active即可. </li>
+<li>active-class: 当router-link对应的路由匹配成功时, 会自动给当前元素设置一个router-link-active的class, 设置active-class可以修改默认的名称. 在进行高亮显示的导航菜单或者底部tabbar时, 会使用到该类. 但是通常不会修改类的属性, 会直接使用默认的router-link-active即可. </li>
 </ul>
 </blockquote>
+<div class="note info"><p>通过代码方式改变路径</p></div>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;button @click=<span class="string">&quot;homeClick&quot;</span>&gt;首页&lt;/button&gt;</span><br><span class="line">&lt;button @click=<span class="string">&quot;aboutClick&quot;</span>&gt;关于&lt;/button&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 通过代码方式修改路径</span></span><br><span class="line"><span class="function"><span class="title">homeClick</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.$router.push(<span class="string">&quot;/Home&quot;</span>);</span><br><span class="line">  <span class="built_in">this</span>.$router.replace(<span class="string">&quot;/Home&quot;</span>); <span class="comment">// 不能返回</span></span><br><span class="line">&#125;,</span><br><span class="line"><span class="function"><span class="title">aboutClick</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.$router.push(<span class="string">&quot;/About&quot;</span>);</span><br><span class="line">  <span class="built_in">this</span>.$router.replace(<span class="string">&quot;/About&quot;</span>); <span class="comment">// 不能返回</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note info"><p>路由懒加载</p></div>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 路由懒加载</span></span><br><span class="line"><span class="keyword">const</span> home = <span class="function">()=&gt;</span> <span class="keyword">import</span>(<span class="string">&quot;../components/home&quot;</span>)</span><br><span class="line"><span class="keyword">const</span> about = <span class="function">()=&gt;</span> <span class="keyword">import</span>(<span class="string">&quot;../components/about&quot;</span>)</span><br><span class="line"><span class="keyword">const</span> user = <span class="function">()=&gt;</span> <span class="keyword">import</span>(<span class="string">&quot;../components/user&quot;</span>)</span><br></pre></td></tr></table></figure>
+
 
       </div>
       
