@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>不刷新网页更换url | 欢迎来到xs的博客</title>
+  <title>安装和使用vue-router | 欢迎来到xs的博客</title>
 
   
     
@@ -551,7 +551,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
           <script>
             var typed = new Typed("#post-detail-header-title", {
-              strings: ['不刷新网页更换url'],
+              strings: ['安装和使用vue-router'],
               startDelay: 100,
               typeSpeed: 100,
               loop: false,
@@ -588,6 +588,10 @@
               前端
             </a>
           
+            <a href="/tags/Vue-router/" class="">
+              Vue-router
+            </a>
+          
         </div>
         
         
@@ -602,6 +606,25 @@
 
 <h5 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">history.pushState(&#123;&#125;,<span class="string">&quot;&quot;</span>,<span class="string">&quot;demo&quot;</span>)   <span class="comment">// 相当于入栈,网页显示的url为最新栈顶的元素</span></span><br><span class="line">history.back()   <span class="comment">// 退栈  相当于 history.go(-1) </span></span><br><span class="line">history.go(-<span class="number">1</span>)  <span class="comment">//弹出一个</span></span><br><span class="line">history.forward()  <span class="comment">// 相当于 history.go(1) </span></span><br><span class="line"></span><br><span class="line">history.replaceState(&#123;&#125;,<span class="string">&quot;&quot;</span>,<span class="string">&quot;home&quot;</span>)  <span class="comment">//替换url,不能返回</span></span><br></pre></td></tr></table></figure>
 
+<h4 id="安装和使用vue-router"><a href="#安装和使用vue-router" class="headerlink" title="安装和使用vue-router"></a>安装和使用vue-router</h4><p>步骤一: 安装vue-router</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install vue-router --save</span><br></pre></td></tr></table></figure>
+
+<p>步骤二: 在模块化工程中使用它(因为是一个插件, 所以可以通过Vue.use()来安装路由功能)<br>第一步：导入路由对象，并且调用 Vue.use(VueRouter)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Router <span class="keyword">from</span> <span class="string">&quot;vue-router&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>第二步：创建路由实例，并且传入路由映射配置</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span></span><br><span class="line"><span class="keyword">import</span> Router <span class="keyword">from</span> <span class="string">&quot;vue-router&quot;</span></span><br><span class="line"><span class="keyword">import</span> home <span class="keyword">from</span> <span class="string">&quot;../components/home&quot;</span></span><br><span class="line"><span class="keyword">import</span> about <span class="keyword">from</span> <span class="string">&quot;../components/about&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用Vue.use(插件) 安装插件</span></span><br><span class="line">Vue.use(Router);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> Router(&#123;</span><br><span class="line">    routes: [</span><br><span class="line">        &#123;</span><br><span class="line">            path:<span class="string">&quot;/Home&quot;</span>,</span><br><span class="line">            component: home</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            path:<span class="string">&quot;/About&quot;</span>,</span><br><span class="line">            component: about</span><br><span class="line">        &#125;]</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> router</span><br></pre></td></tr></table></figure>
+
+<p>第三步：在Vue实例中挂载创建的路由实例</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  render: <span class="function"><span class="params">h</span> =&gt;</span> h(App),</span><br><span class="line">  store:store,</span><br><span class="line">  router:router</span><br><span class="line">&#125;).$mount(<span class="string">&#x27;#app&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<span class='pbg info'>使用vue-router的步骤:</span>
+
+<ul>
+<li>第一步: 创建路由组件</li>
+<li>第二步: 配置路由映射: 组件和路径映射关系</li>
+<li>第三步: 使用路由: 通过<router-link>和<router-view></li>
+</ul>
 
       </div>
       
@@ -612,7 +635,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2021/03/15/bu-shua-xin-wang-ye-geng-huan-url/" target="_blank" title="不刷新网页更换url">https://abcdefgxs.github.io/2021/03/15/bu-shua-xin-wang-ye-geng-huan-url/</a>
+    <a href="/2021/03/15/bu-shua-xin-wang-ye-geng-huan-url/" target="_blank" title="安装和使用vue-router">https://abcdefgxs.github.io/2021/03/15/bu-shua-xin-wang-ye-geng-huan-url/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
