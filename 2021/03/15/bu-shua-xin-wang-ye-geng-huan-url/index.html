@@ -625,6 +625,12 @@
 <li>第二步: 配置路由映射: 组件和路径映射关系</li>
 <li>第三步: 使用路由: 通过<router-link>和<router-view></li>
 </ul>
+<div class="note info"><p>路径不显示#</p></div>
+
+<span class='pbg info'>在创建Router对象时，将mode模式设置为history</span>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> Router(&#123;</span><br><span class="line">    routes: [</span><br><span class="line">        &#123;</span><br><span class="line">            path:<span class="string">&quot;&quot;</span>,</span><br><span class="line">            redirect: <span class="string">&quot;/Home&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            path:<span class="string">&quot;/Home&quot;</span>,</span><br><span class="line">            component: home</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            path:<span class="string">&quot;/About&quot;</span>,</span><br><span class="line">            component: about</span><br><span class="line">        &#125;],</span><br><span class="line">    mode:<span class="string">&quot;history&quot;</span>   <span class="comment">// history方式，不显示#号，默认是hash的模式</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
 
       </div>
       
