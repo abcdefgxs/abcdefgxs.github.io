@@ -6,7 +6,7 @@
   <link href="https://abcdefgxs.github.io/atom.xml" rel="self"/>
   
   <link href="https://abcdefgxs.github.io/"/>
-  <updated>2021-03-14T15:23:38.925Z</updated>
+  <updated>2021-03-15T02:31:18.729Z</updated>
   <id>https://abcdefgxs.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>不刷新网页更换url</title>
+    <link href="https://abcdefgxs.github.io/2021/03/15/bu-shua-xin-wang-ye-geng-huan-url/"/>
+    <id>https://abcdefgxs.github.io/2021/03/15/bu-shua-xin-wang-ye-geng-huan-url/</id>
+    <published>2021-03-15T02:22:55.000Z</published>
+    <updated>2021-03-15T02:31:18.729Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 class=&quot;bamboo-h red&quot; id=&quot;不刷新网页更换url的两种方式&quot;&gt;不刷新网页更换url的两种方式&lt;/h2&gt;&lt;br/&gt;
+
+
+
+&lt;h5 id=&quot;第一种&quot;&gt;&lt;a href=&quot;#第一种&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="前端" scheme="https://abcdefgxs.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>vscode 更换背景图片</title>

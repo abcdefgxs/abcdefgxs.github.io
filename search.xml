@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>不刷新网页更换url</title>
+      <link href="2021/03/15/bu-shua-xin-wang-ye-geng-huan-url/"/>
+      <url>2021/03/15/bu-shua-xin-wang-ye-geng-huan-url/</url>
+      
+        <content type="html"><![CDATA[<h2 class="bamboo-h red" id="不刷新网页更换url的两种方式">不刷新网页更换url的两种方式</h2><br/><h5 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h5><p>改变location的hash值</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">location.hash = <span class="string">&quot;home&quot;</span></span><br></pre></td></tr></table></figure><h5 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">history.pushState(&#123;&#125;,<span class="string">&quot;&quot;</span>,<span class="string">&quot;demo&quot;</span>)   <span class="comment">// 相当于入栈,网页显示的url为最新栈顶的元素</span></span><br><span class="line">history.back()   <span class="comment">// 退栈  相当于 history.go(-1) </span></span><br><span class="line">history.go(-<span class="number">1</span>)  <span class="comment">//弹出一个</span></span><br><span class="line">history.forward()  <span class="comment">// 相当于 history.go(1) </span></span><br><span class="line"></span><br><span class="line">history.replaceState(&#123;&#125;,<span class="string">&quot;&quot;</span>,<span class="string">&quot;home&quot;</span>)  <span class="comment">//替换url,不能返回</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vscode 更换背景图片</title>
       <link href="2021/03/14/vscode-geng-huan-bei-jing-tu-pian/"/>
       <url>2021/03/14/vscode-geng-huan-bei-jing-tu-pian/</url>

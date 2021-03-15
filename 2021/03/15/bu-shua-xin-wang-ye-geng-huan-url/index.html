@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>vscode 更换背景图片 | 欢迎来到xs的博客</title>
+  <title>不刷新网页更换url | 欢迎来到xs的博客</title>
 
   
     
@@ -540,7 +540,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/./medias/5.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/./medias/6.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
@@ -551,7 +551,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
           <script>
             var typed = new Typed("#post-detail-header-title", {
-              strings: ['vscode 更换背景图片'],
+              strings: ['不刷新网页更换url'],
               startDelay: 100,
               typeSpeed: 100,
               loop: false,
@@ -576,7 +576,7 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2021-03-14</span>
+        <span class="post-time">2021-03-15</span>
       </div>
       
       <div class="post-tags-categories">
@@ -588,25 +588,21 @@
               前端
             </a>
           
-            <a href="/tags/%E4%B8%9A%E4%BD%99%E7%88%B1%E5%A5%BD/" class="">
-              业余爱好
-            </a>
-          
         </div>
         
         
       </div>
       <div class="post-content">
-        <h2 class="bamboo-h red" id="第一种方法">第一种方法</h2><br/>
+        <h2 class="bamboo-h red" id="不刷新网页更换url的两种方式">不刷新网页更换url的两种方式</h2><br/>
 
-<h4 id="1-直接修改vscode的样式"><a href="#1-直接修改vscode的样式" class="headerlink" title="1.直接修改vscode的样式"></a>1.直接修改vscode的样式</h4><p>在I:\Microsoft VS Code\resources\app\out\vs\workbench\workbench.desktop.main.css内添加一下代码</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> <span class="selector-tag">body</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">./123.jpg</span>);</span><br><span class="line">	<span class="attribute">background-size</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0.9</span>;</span><br><span class="line">	<span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img "" class="lazyload placeholder" data-original="https://i.loli.net/2021/03/14/bU5RCtdLuriwgqW.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210314232143787"></p>
-<blockquote>
-<p>注意图片不要使用绝对路径，否则会报一下错误 Not allowed to load local resource: file// XXXX 的错误，<strong>谷歌浏览器因为安全性的原因，无法让客户端浏览到磁盘（因为这样会被黑客加以利用</strong></p>
-</blockquote>
-<h4 id="2-下载background-cover插件"><a href="#2-下载background-cover插件" class="headerlink" title="2.下载background-cover插件"></a>2.下载background-cover插件</h4>
+
+<h5 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h5><p>改变location的hash值</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">location.hash = <span class="string">&quot;home&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">history.pushState(&#123;&#125;,<span class="string">&quot;&quot;</span>,<span class="string">&quot;demo&quot;</span>)   <span class="comment">// 相当于入栈,网页显示的url为最新栈顶的元素</span></span><br><span class="line">history.back()   <span class="comment">// 退栈  相当于 history.go(-1) </span></span><br><span class="line">history.go(-<span class="number">1</span>)  <span class="comment">//弹出一个</span></span><br><span class="line">history.forward()  <span class="comment">// 相当于 history.go(1) </span></span><br><span class="line"></span><br><span class="line">history.replaceState(&#123;&#125;,<span class="string">&quot;&quot;</span>,<span class="string">&quot;home&quot;</span>)  <span class="comment">//替换url,不能返回</span></span><br></pre></td></tr></table></figure>
+
+
       </div>
       
         <div class="copyright">
@@ -616,7 +612,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2021/03/14/vscode-geng-huan-bei-jing-tu-pian/" target="_blank" title="vscode 更换背景图片">https://abcdefgxs.github.io/2021/03/14/vscode-geng-huan-bei-jing-tu-pian/</a>
+    <a href="/2021/03/15/bu-shua-xin-wang-ye-geng-huan-url/" target="_blank" title="不刷新网页更换url">https://abcdefgxs.github.io/2021/03/15/bu-shua-xin-wang-ye-geng-huan-url/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -634,45 +630,22 @@
 
 
 
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/./medias/6.jpg" style="background-size: cover; 
-      background-position: center center;">
-    </div>
-    <a href="/2021/03/15/bu-shua-xin-wang-ye-geng-huan-url/" class="post-nav-link">
-      <div class="title">
-        <i class="fa fa-angle-left"></i> 上一篇:
-        <div>不刷新网页更换url</div>
-      </div>
-      
-      <!-- <div class="content">
-        不刷新网页更换url的两种方式
-
-
-
-第一种改变location的hash值
-1location.hash = &quo
-      </div> -->
-    </a>
-  </div>
-
 
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/./medias/3.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/./medias/5.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/03/14/vuex-xue-xi/" class="post-nav-link">
+    <a href="/2021/03/14/vscode-geng-huan-bei-jing-tu-pian/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
-        <div>Vuex学习</div>
+        <div>vscode 更换背景图片</div>
       </div>
       <!-- <div class="content">
-        Vuex的概念
+        第一种方法
 
-Vuex的概念
-Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应
+1.直接修改vscode的样式在I:\Microsoft VS Code\resources\app\ou
       </div> -->
     </a>
   </div>
