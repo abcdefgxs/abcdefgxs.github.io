@@ -623,7 +623,7 @@
 <ul>
 <li>第一步: 创建路由组件</li>
 <li>第二步: 配置路由映射: 组件和路径映射关系</li>
-<li>第三步: 使用路由: 通过<router-link>和<router-view></li>
+<li>第三步: 使用路由: 通过router-link和router-view</li>
 </ul>
 <div class="note info"><p>路径不显示#</p></div>
 
@@ -655,6 +655,12 @@
               <p><strong>新建两个组件news和message</strong></p><p>==在store/index.js中添加一下内容==</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">            path: <span class="string">&quot;/Home&quot;</span>,</span><br><span class="line">            component: home,</span><br><span class="line">            children: [   <span class="comment">// 路由嵌套</span></span><br><span class="line">                &#123;</span><br><span class="line">                    path:<span class="string">&quot;&quot;</span>,</span><br><span class="line">                    redirect: <span class="string">&quot;news&quot;</span> </span><br><span class="line">                &#125;,</span><br><span class="line">                &#123;</span><br><span class="line">                    path: <span class="string">&quot;news&quot;</span>,   <span class="comment">// 这不需要加斜杠</span></span><br><span class="line">                    component: news</span><br><span class="line">                &#125;,</span><br><span class="line">                &#123;</span><br><span class="line">                    path: <span class="string">&quot;message&quot;</span>,</span><br><span class="line">                    component: message</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br></pre></td></tr></table></figure><p><strong>home.vue中</strong></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        这是home页面</span><br><span class="line">        <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">&quot;/home/news&quot;</span> <span class="attr">tag</span>=<span class="string">&quot;button&quot;</span>&gt;</span>新闻<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">&quot;/home/message&quot;</span> <span class="attr">tag</span>=<span class="string">&quot;button&quot;</span>&gt;</span>消息<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">router-view</span>&gt;</span><span class="tag">&lt;/<span class="name">router-view</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
               </div>
             </details>
+
+
+
+
+
+<div class="audio"><audio controls preload><source src='http://audio.xslovestudy.com/The%20Saltwater%20Room%20-%20Owl%20City.mp3' type='audio/mp3'>Your browser does not support the audio tag.</audio></div>
       </div>
       
         <div class="copyright">
