@@ -6,7 +6,7 @@
   <link href="https://abcdefgxs.github.io/atom.xml" rel="self"/>
   
   <link href="https://abcdefgxs.github.io/"/>
-  <updated>2021-03-16T10:26:33.734Z</updated>
+  <updated>2021-03-18T01:33:50.203Z</updated>
   <id>https://abcdefgxs.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>谷粒商城学习笔记day1</title>
+    <link href="https://abcdefgxs.github.io/2021/03/18/gu-li-shang-cheng-xue-xi-bi-ji-day1/"/>
+    <id>https://abcdefgxs.github.io/2021/03/18/gu-li-shang-cheng-xue-xi-bi-ji-day1/</id>
+    <published>2021-03-18T00:48:04.000Z</published>
+    <updated>2021-03-18T01:33:50.203Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;1-剔除误加入git版本控制中心的文件&quot;&gt;&lt;a href=&quot;#1-剔除误加入git版本控制中心的文件&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="后端" scheme="https://abcdefgxs.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="项目" scheme="https://abcdefgxs.github.io/tags/%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="java" scheme="https://abcdefgxs.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>UML图六种箭头含义(太容易记混了)</title>

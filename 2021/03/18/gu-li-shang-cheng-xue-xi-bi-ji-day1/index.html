@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>UML图六种箭头含义(太容易记混了) | 欢迎来到xs的博客</title>
+  <title>谷粒商城学习笔记day1 | 欢迎来到xs的博客</title>
 
   
     
@@ -540,7 +540,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/./medias/7.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/./medias/8.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
@@ -551,7 +551,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
           <script>
             var typed = new Typed("#post-detail-header-title", {
-              strings: ['UML图六种箭头含义(太容易记混了)'],
+              strings: ['谷粒商城学习笔记day1'],
               startDelay: 100,
               typeSpeed: 100,
               loop: false,
@@ -576,7 +576,7 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2021-03-15</span>
+        <span class="post-time">2021-03-18</span>
       </div>
       
       <div class="post-tags-categories">
@@ -584,8 +584,16 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/UML/" class="">
-              UML
+            <a href="/tags/%E5%90%8E%E7%AB%AF/" class="">
+              后端
+            </a>
+          
+            <a href="/tags/%E9%A1%B9%E7%9B%AE/" class="">
+              项目
+            </a>
+          
+            <a href="/tags/java/" class="">
+              java
             </a>
           
         </div>
@@ -593,67 +601,17 @@
         
       </div>
       <div class="post-content">
-        <h2 class="bamboo-h red" id="UML图六种箭头含义">UML图六种箭头含义</h2><br/>
+        <h4 id="1-剔除误加入git版本控制中心的文件"><a href="#1-剔除误加入git版本控制中心的文件" class="headerlink" title="1.剔除误加入git版本控制中心的文件"></a>1.剔除误加入git版本控制中心的文件</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -r --cached **/README.md</span><br></pre></td></tr></table></figure>
 
+<h4 id="2-springboot在yml配置了启动端口但启动还是8080如何解决"><a href="#2-springboot在yml配置了启动端口但启动还是8080如何解决" class="headerlink" title="2.springboot在yml配置了启动端口但启动还是8080如何解决"></a>2.springboot在yml配置了启动端口但启动还是8080如何解决</h4><p><strong>重新clean一下，然后compile一下即可</strong></p>
+<p>nacos1.3.1以上版本为分布式版本，启动后会报错。</p>
+<h4 id="3、如何使用Nacos作为配置中心统一管理配置"><a href="#3、如何使用Nacos作为配置中心统一管理配置" class="headerlink" title="3、如何使用Nacos作为配置中心统一管理配置"></a><strong>3、如何使用Nacos作为配置中心统一管理配置</strong></h4><p> 1）引入依赖</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alibaba.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-alibaba-nacos-config<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+<p> 2）创建一个bootstrap.properties。</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">spring.application.name</span>=<span class="string">gulimall-coupon</span></span><br><span class="line"><span class="meta">spring.cloud.nacos.config.server-addr</span>=<span class="string">127.0.0.1:8848</span></span><br></pre></td></tr></table></figure>
 
-<details ><summary> 泛化 </summary>
-              <div class='content'>
-              <div class="note info"><p>泛化： <strong>表示一个更泛化的元素和一个更具体的元素之间的关系。</strong> 泛化是用于对继承进行建模的UML元素。在Java中，用extends关键字表示。 表示方式：<strong>用实线空心箭头表示。</strong> <img src=https://i.loli.net/2021/03/15/bOer9xQDCy6NLSu.png alt=image-20210315205223403 style=zoom:50%; /></p></div>
-              </div>
-            </details>
-
-
-
-
-
-
-
-<details ><summary> 实现 </summary>
-              <div class='content'>
-              <div class="note"><p>概念：<strong>实现是一种类与接口的关系，表示类是接口所有特征和行为的实现，在程序中一般通过类实现接口来描述。</strong> 表示方式：<strong>用虚线空心三角形箭头表示，实现类指向接口。</strong> <img src=https://i.loli.net/2021/03/15/4LeTUHYODx7apC6.png alt=image-20210315210600980 style=zoom:50%; /></p></div>
-              </div>
-            </details>
-
-
-
-<details ><summary> 依赖 </summary>
-              <div class='content'>
-              <div class="note warning"><p>概念：<strong>是一种使用的关系，即一个类的实现需要另一个类的协助。在Java中，方法参数需要传入另一个类的对象，就表示依赖这个类。</strong> 表示方式：<strong>虚线箭头。</strong> 注意：<strong>类A需要用到类B，类A指向类B。</strong> <img src=https://i.loli.net/2021/03/15/RgupyK4DefkAlMr.png alt=image-20210315210829304 style=zoom:50%; /></p></div>
-              </div>
-            </details>
-
-
-
-
-
-<details ><summary> 关联 </summary>
-              <div class='content'>
-              <div class="note warning"><p>关联 概念：<strong>表示类与类之间的联接,它使一个类知道另一个类的属性和方法，这种关系比依赖更强、不存在依赖关系的偶然性、关系也不是临时性的，一般是长期性的。</strong> 在Java中，一个类的全局变量引用了另一个类，就表示关联了这个类 表示方式：实线箭头。 <img src=https://i.loli.net/2021/03/15/HPbFB3v5AO7D1IT.png alt=image-20210315211003786 style=zoom:50%; /></p></div>
-              </div>
-            </details>
-
-
-
-<details ><summary> 聚合 </summary>
-              <div class='content'>
-              <div class="note info"><p>聚合(耦合性低) 概念：<strong>聚合关联关系的一种特例，是强的关联关系。聚合是整体和个体之间的关系，即has-a的关系，整体与个体可以具有各自的生命周期，部分可以属于多个整体对象，也可以为多个整体对象共享。程序中聚合和关联关系是一致的，只能从语义级别来区分。</strong> 表示方式：<strong>尾部为空心菱形的实线箭头（也可以没箭头）。</strong> 注意：<em>类A中用到类B属性，类A指向类B。</em> <img src=https://i.loli.net/2021/03/15/7cKnAmR61CYhsUF.png alt=image-20210315211123556 style=zoom:50%; /></p></div>
-              </div>
-            </details>
-
-
-
-<details ><summary> 组合 </summary>
-              <div class='content'>
-              <div class="note success"><p>组合(耦合性高) 概念：<strong>组合也是关联关系的一种特例。组合是一种整体与部分的关系，即contains-a的关系，比聚合更强。部分与整体的生命周期一致，整体的生命周期结束也就意味着部分的生命周期结束，组合关系不能共享。程序中组合和关联关系是一致的，只能从语义级别来区分。</strong> 表示方式：<strong>尾部为实心菱形的实现箭头（也可以没箭头）。</strong> 注意：<em>Head是Dog的一部分，Dog指向Head。</em> <img src=https://i.loli.net/2021/03/15/FLli1aPnEJuoOwY.png alt=image-20210315211422292 style=zoom:50%; /></p></div>
-              </div>
-            </details>
-
-
-
-<blockquote>
-<p>转载自<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/d1d45efcfac1">https://www.jianshu.com/p/d1d45efcfac1</a></p>
-</blockquote>
+<p> 3）需要给配置中心默认添加一个叫 数据集（Data Id）mall-coupon.properties。默认规则，应用名.properties<br> 4）给 应用名.properties 添加任何配置<br> 5）动态获取配置。<br>      @RefreshScope：动态获取并刷新配置<br>      @Value(“${配置项的名}”)：获取到配置。<br>      如果配置中心和当前应用的配置文件中都配置了相同的项，优先使用配置中心的配置。</p>
 
       </div>
       
@@ -664,7 +622,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2021/03/15/uml-tu-liu-chong-jian-tou-han-yi-tai-rong-yi-ji-hun-liao/" target="_blank" title="UML图六种箭头含义(太容易记混了)">https://abcdefgxs.github.io/2021/03/15/uml-tu-liu-chong-jian-tou-han-yi-tai-rong-yi-ji-hun-liao/</a>
+    <a href="/2021/03/18/gu-li-shang-cheng-xue-xi-bi-ji-day1/" target="_blank" title="谷粒商城学习笔记day1">https://abcdefgxs.github.io/2021/03/18/gu-li-shang-cheng-xue-xi-bi-ji-day1/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -682,44 +640,26 @@
 
 
 
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/./medias/8.jpg" style="background-size: cover; 
-      background-position: center center;">
-    </div>
-    <a href="/2021/03/18/gu-li-shang-cheng-xue-xi-bi-ji-day1/" class="post-nav-link">
-      <div class="title">
-        <i class="fa fa-angle-left"></i> 上一篇:
-        <div>谷粒商城学习笔记day1</div>
-      </div>
-      
-      <!-- <div class="content">
-        1.剔除误加入git版本控制中心的文件1git rm -r --cached **/README.md
-
-2.sprin
-      </div> -->
-    </a>
-  </div>
-
 
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/./medias/6.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/./medias/7.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/03/15/vue-router-ji-ben-shi-yong/" class="post-nav-link">
+    <a href="/2021/03/15/uml-tu-liu-chong-jian-tou-han-yi-tai-rong-yi-ji-hun-liao/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
-        <div>安装和使用vue-router</div>
+        <div>UML图六种箭头含义(太容易记混了)</div>
       </div>
       <!-- <div class="content">
-        不刷新网页更换url的两种方式
+        UML图六种箭头含义
 
 
 
-第一种改变location的hash值
-1location.hash = &quo
+ 泛化 
+              
+              泛化： 表示一个更泛化的
       </div> -->
     </a>
   </div>
