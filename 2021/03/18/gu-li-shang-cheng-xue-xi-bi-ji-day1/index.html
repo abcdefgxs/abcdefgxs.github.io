@@ -604,7 +604,9 @@
         <h4 id="1-剔除误加入git版本控制中心的文件"><a href="#1-剔除误加入git版本控制中心的文件" class="headerlink" title="1.剔除误加入git版本控制中心的文件"></a>1.剔除误加入git版本控制中心的文件</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -r --cached **/README.md</span><br></pre></td></tr></table></figure>
 
 <h4 id="2-springboot在yml配置了启动端口但启动还是8080如何解决"><a href="#2-springboot在yml配置了启动端口但启动还是8080如何解决" class="headerlink" title="2.springboot在yml配置了启动端口但启动还是8080如何解决"></a>2.springboot在yml配置了启动端口但启动还是8080如何解决</h4><p><strong>重新clean一下，然后compile一下即可</strong></p>
-<p>nacos1.3.1以上版本为分布式版本，启动后会报错。</p>
+<blockquote>
+<span class='pbg info'>注意：nacos1.3.1以上版本为分布式版本，启动后会报错。</span>
+</blockquote>
 <h4 id="3、如何使用Nacos作为配置中心统一管理配置"><a href="#3、如何使用Nacos作为配置中心统一管理配置" class="headerlink" title="3、如何使用Nacos作为配置中心统一管理配置"></a><strong>3、如何使用Nacos作为配置中心统一管理配置</strong></h4><p> 1）引入依赖</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alibaba.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-alibaba-nacos-config<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
