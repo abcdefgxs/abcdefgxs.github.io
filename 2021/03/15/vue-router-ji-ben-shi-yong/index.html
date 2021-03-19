@@ -663,12 +663,13 @@
       <source src="http://audio.xslovestudy.com/The%20Saltwater%20Room%20-%20Owl%20City.mp3">
 </audio>
 
-<video autoplay loop controls>
+<video autoplay="true" loop controls>
     <source src="http://audio.xslovestudy.com/Vicetone-Cozi%20Zuehlsdorff-Nevada%28%E8%B6%85%E6%B8%85%29.mp4">
 </video>
+
+
 <script type="text/javascript">
     setTimeout(()=>{
-        alert("我即将进入画中画模式了，哈哈哈");
         let video = document.querySelector("video");
         video.requestPictureInPicture();  // 15s之后进入画中画模式
     },15000);
