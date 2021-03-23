@@ -6,7 +6,7 @@
   <link href="https://abcdefgxs.github.io/atom.xml" rel="self"/>
   
   <link href="https://abcdefgxs.github.io/"/>
-  <updated>2021-03-18T01:39:25.250Z</updated>
+  <updated>2021-03-23T08:53:47.536Z</updated>
   <id>https://abcdefgxs.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>shiro学习总结</title>
+    <link href="https://abcdefgxs.github.io/2021/03/23/shiro-xue-xi-zong-jie/"/>
+    <id>https://abcdefgxs.github.io/2021/03/23/shiro-xue-xi-zong-jie/</id>
+    <published>2021-03-23T08:21:50.000Z</published>
+    <updated>2021-03-23T08:53:47.536Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 class=&quot;bamboo-h &quot; id=&quot;1、什么是权限管理&quot;&gt;1、什么是权限管理&lt;/h2&gt;&lt;br/&gt;
+
+&lt;p&gt;基本上涉及到用户参与的系统都要进行权限管理，权限管理属于系统安全的范畴，权限管理实现&lt;code&gt;对用户访问系统的控制&lt;/code&gt;，按照安全规则或者&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="shiro" scheme="https://abcdefgxs.github.io/tags/shiro/"/>
+    
+    <category term="权限管理" scheme="https://abcdefgxs.github.io/tags/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shiro实战教程</title>
+    <link href="https://abcdefgxs.github.io/2021/03/20/shiro-shi-zhan-jiao-cheng/"/>
+    <id>https://abcdefgxs.github.io/2021/03/20/shiro-shi-zhan-jiao-cheng/</id>
+    <published>2021-03-20T07:21:04.000Z</published>
+    <updated>2021-03-20T09:15:46.088Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Shiro-实战教程&quot;&gt;&lt;a href=&quot;#Shiro-实战教程&quot; class=&quot;headerlink&quot; title=&quot;Shiro 实战教程&quot;&gt;&lt;/a&gt;Shiro</summary>
+        
+      
+    
+    
+    
+    
+    <category term="shiro" scheme="https://abcdefgxs.github.io/tags/shiro/"/>
+    
+  </entry>
   
   <entry>
     <title>谷粒商城学习笔记day1</title>
