@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>谷粒商城学习笔记day1 | 欢迎来到xs的博客</title>
+  <title>java基础知识 | 欢迎来到xs的博客</title>
 
   
     
@@ -540,7 +540,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/./medias/8.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/./medias/1.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
@@ -551,7 +551,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
           <script>
             var typed = new Typed("#post-detail-header-title", {
-              strings: ['谷粒商城学习笔记day1'],
+              strings: ['java基础知识'],
               startDelay: 100,
               typeSpeed: 100,
               loop: false,
@@ -576,21 +576,13 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2021-03-18</span>
+        <span class="post-time">2021-03-28</span>
       </div>
       
       <div class="post-tags-categories">
         
         <div class="tags">
           <i class="iconfont icontag"></i>
-          
-            <a href="/tags/%E5%90%8E%E7%AB%AF/" class="">
-              后端
-            </a>
-          
-            <a href="/tags/%E9%A1%B9%E7%9B%AE/" class="">
-              项目
-            </a>
           
             <a href="/tags/java/" class="">
               java
@@ -599,30 +591,16 @@
         </div>
         
         
-        <div class="categories">
-          <i class="iconfont iconbookmark1"></i>
-          
-            <a href="/categories/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E%E9%A1%B9%E7%9B%AE/" class="">
-              谷粒商城项目
-            </a>
-          
-        </div>
-        
       </div>
       <div class="post-content">
-        <h4 id="1-剔除误加入git版本控制中心的文件"><a href="#1-剔除误加入git版本控制中心的文件" class="headerlink" title="1.剔除误加入git版本控制中心的文件"></a>1.剔除误加入git版本控制中心的文件</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -r --cached **/README.md</span><br></pre></td></tr></table></figure>
+        <h3 id="1-JDK-和-JRE-有什么区别？"><a href="#1-JDK-和-JRE-有什么区别？" class="headerlink" title="1.JDK 和 JRE 有什么区别？"></a>1.JDK 和 JRE 有什么区别？</h3><span class='pbg info'>JDK: Java Development Kit 的简称，Java开发工具包，提供了Java的开发环境和运行环境。</span>
 
-<h4 id="2-springboot在yml配置了启动端口但启动还是8080如何解决"><a href="#2-springboot在yml配置了启动端口但启动还是8080如何解决" class="headerlink" title="2.springboot在yml配置了启动端口但启动还是8080如何解决"></a>2.springboot在yml配置了启动端口但启动还是8080如何解决</h4><p><strong>重新clean一下，然后compile一下即可</strong></p>
-<blockquote>
-<span class='pbg info'>注意：nacos1.3.1以上版本为分布式版本，启动后会报错。</span>
-</blockquote>
-<h4 id="3、如何使用Nacos作为配置中心统一管理配置"><a href="#3、如何使用Nacos作为配置中心统一管理配置" class="headerlink" title="3、如何使用Nacos作为配置中心统一管理配置"></a><strong>3、如何使用Nacos作为配置中心统一管理配置</strong></h4><p> 1）引入依赖</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alibaba.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-alibaba-nacos-config<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p> 2）创建一个bootstrap.properties。</p>
-<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">spring.application.name</span>=<span class="string">gulimall-coupon</span></span><br><span class="line"><span class="meta">spring.cloud.nacos.config.server-addr</span>=<span class="string">127.0.0.1:8848</span></span><br></pre></td></tr></table></figure>
 
-<p> 3）需要给配置中心默认添加一个叫 数据集（Data Id）mall-coupon.properties。默认规则，应用名.properties<br> 4）给 应用名.properties 添加任何配置<br> 5）动态获取配置。<br>      @RefreshScope：动态获取并刷新配置<br>      @Value(“${配置项的名}”)：获取到配置。<br>      如果配置中心和当前应用的配置文件中都配置了相同的项，优先使用配置中心的配置。</p>
+
+
+<span class='pbg warning'>JRE：Java Runtime Environment 的简称，Java 运行环境，为Java的运行提供了所需环境。具体来说JDK其实包含了JRE，同时还包含了编译Java源码的编辑器Javac ，还包含了很多Java程序调试和分析的工具。简单来说：如果你需要运行Java程序，只需安装JRE就可以了，如果你需要编写Java程序，需要安装JDK</span>
+
 
       </div>
       
@@ -633,7 +611,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2021/03/18/gu-li-shang-cheng-xue-xi-bi-ji-day1/" target="_blank" title="谷粒商城学习笔记day1">https://abcdefgxs.github.io/2021/03/18/gu-li-shang-cheng-xue-xi-bi-ji-day1/</a>
+    <a href="/2021/03/28/java-ji-chu-zhi-shi/" target="_blank" title="java基础知识">https://abcdefgxs.github.io/2021/03/28/java-ji-chu-zhi-shi/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -653,17 +631,17 @@
 
   
   <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/true" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/medias/6.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/03/20/shiro-shi-zhan-jiao-cheng/" class="post-nav-link">
+    <a href="/2021/03/31/wei-xin-xiao-cheng-xu-kai-fa-xin-de/" class="post-nav-link">
       <div class="title">
         <i class="fa fa-angle-left"></i> 上一篇:
-        <div>shiro实战教程</div>
+        <div>微信小程序开发心得</div>
       </div>
       
       <!-- <div class="content">
-        Shiro 实战教程![image-20200520220106539](I:\shiro实战教程资料\Shiro 实战
+        1.使用async时，要在本地选中增强编译才能生效
       </div> -->
     </a>
   </div>
@@ -672,22 +650,16 @@
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/./medias/7.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/./medias/12.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/03/15/uml-tu-liu-chong-jian-tou-han-yi-tai-rong-yi-ji-hun-liao/" class="post-nav-link">
+    <a href="/2021/03/25/mybatisplus-xue-xi-bi-ji/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
-        <div>UML图六种箭头含义(太容易记混了)</div>
+        <div>MyBatisPlus学习笔记</div>
       </div>
       <!-- <div class="content">
-        UML图六种箭头含义
-
-
-
- 泛化(**子类指向父类**) 
-              
-              
+        MyBatis Plus 快速上手Spring Boot + MyBatis Plus（国产的开源框架，并没有接入到 S
       </div> -->
     </a>
   </div>
