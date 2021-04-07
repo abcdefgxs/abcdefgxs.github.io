@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>CAP定理 | 欢迎来到xs的博客</title>
+  <title>给域名绑定ssl证书 | 欢迎来到xs的博客</title>
 
   
     
@@ -540,7 +540,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/10.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/15.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
@@ -551,7 +551,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
           <script>
             var typed = new Typed("#post-detail-header-title", {
-              strings: ['CAP定理'],
+              strings: ['给域名绑定ssl证书'],
               startDelay: 100,
               typeSpeed: 100,
               loop: false,
@@ -576,7 +576,7 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2021-04-05</span>
+        <span class="post-time">2021-04-07</span>
       </div>
       
       <div class="post-tags-categories">
@@ -584,8 +584,8 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" class="">
-              分布式
+            <a href="/tags/%E5%9F%9F%E5%90%8D/" class="">
+              域名
             </a>
           
         </div>
@@ -594,50 +594,49 @@
         <div class="categories">
           <i class="iconfont iconbookmark1"></i>
           
-            <a href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F/" class="">
-              分布式
+            <a href="/categories/%E5%9F%9F%E5%90%8D/" class="">
+              域名
             </a>
           
         </div>
         
       </div>
       <div class="post-content">
-        <h2 id="CAP的由来"><a href="#CAP的由来" class="headerlink" title="CAP的由来"></a>CAP的由来</h2><p>CAP来自于分布式系统三个重要的指标Consistency、Availability、Partition tolerance的首单词字母。</p>
-<p>1998年，加州大学的计算机科学家 Eric Brewer 提出，分布式系统有三个指标。</p>
-<ul>
-<li>Consistency(一致性)</li>
-<li>Availability(可用性)</li>
-<li>Partition tolerance(分区容错性)</li>
-</ul>
-<h4 id="一、Partition-tolerance"><a href="#一、Partition-tolerance" class="headerlink" title="一、Partition tolerance"></a>一、Partition tolerance</h4><p>大多数分布式系统都分布在多个子网络。每个子网络就叫做一个区（partition）。分区容错的意思是，区间通信可能失败。比如，一台服务器放在中国，另一台服务器放在美国，这就是两个区，它们之间可能无法通信。</p>
-<img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210405215956468.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210405215956468" style="zoom:80%;" />
-
-<p>上图中，G1 和 G2 是两台跨区的服务器。G1 向 G2 发送一条消息，G2 可能无法收到。系统设计的时候，必须考虑到这种情况。</p>
-<p>一般来说，分区容错无法避免，因此可以认为 CAP 的 P 总是成立。CAP 定理告诉我们，剩下的 C 和 A 无法同时做到。</p>
-<h4 id="二、Consistency"><a href="#二、Consistency" class="headerlink" title="二、Consistency"></a>二、Consistency</h4><p>Consistency 中文叫做”一致性”。意思是，写操作之后的读操作，必须返回该值。举例来说，某条记录是 v0，用户向 G1 发起一个写操作，将其改为 v1。</p>
-<img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210405220124533.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210405220124533" style="zoom:80%;" />
-
-<p>接下来，用户的读操作就会得到 v1。这就叫一致性。</p>
-<img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210405220151369.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210405220151369" style="zoom:80%;" />
-
-<p>问题是，用户有可能向 G2 发起读操作，由于 G2 的值没有发生变化，因此返回的是 v0。G1 和 G2 读操作的结果不一致，这就不满足一致性了。</p>
-<img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210405220220310.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210405220220310" style="zoom:80%;" />
-
-<p>为了让 G2 也能变为 v1，就要在 G1 写操作的时候，让 G1 向 G2 发送一条消息，要求 G2 也改成 v1。</p>
-<img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210405222008463.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210405222008463" style="zoom:80%;" />
-
-<p>这样的话，用户向 G2 发起读操作，也能得到 v1。</p>
-<img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210405222038263.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210405222038263" style="zoom:80%;" />
-
-<h4 id="三、Availability"><a href="#三、Availability" class="headerlink" title="三、Availability"></a>三、Availability</h4><p>Availability 中文叫做”可用性”，意思是只要收到用户的请求，服务器就必须给出回应。</p>
-<p>用户可以选择向 G1 或 G2 发起读操作。不管是哪台服务器，只要收到请求，就必须告诉用户，到底是 v0 还是 v1，否则就不满足可用性。</p>
-<h4 id="四、Consistency-和-Availability-的矛盾"><a href="#四、Consistency-和-Availability-的矛盾" class="headerlink" title="四、Consistency 和 Availability 的矛盾"></a>四、Consistency 和 Availability 的矛盾</h4><p>一致性和可用性，为什么不可能同时成立？答案很简单，因为可能通信失败（即出现分区容错）。</p>
-<p>如果保证 G2 的一致性，那么 G1 必须在写操作时，锁定 G2 的读操作和写操作。只有数据同步后，才能重新开放读写。锁定期间，G2 不能读写，没有可用性。</p>
-<p>如果保证 G2 的可用性，那么势必不能锁定 G2，所以一致性不成立。</p>
-<p>综上所述，G2 无法同时做到一致性和可用性。系统设计时只能选择一个目标。如果追求一致性，那么无法保证所有节点的可用性；如果追求所有节点的可用性，那就没法做到一致性。</p>
-<blockquote>
-<p>转载自 <a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2018/07/cap.html">http://www.ruanyifeng.com/blog/2018/07/cap.html</a></p>
+        <blockquote>
+<p>问题：最近图床的图片在博客上突然不能访问了，原因是谷歌浏览器自动把http的资源强行转换为https的</p>
 </blockquote>
+<h3 id="一、前往阿里云购买免费的ssl证书"><a href="#一、前往阿里云购买免费的ssl证书" class="headerlink" title="一、前往阿里云购买免费的ssl证书"></a>一、前往阿里云购买免费的ssl证书</h3><img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/20210407084116.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210407084041879" style="zoom:80%;" />
+
+<p>我这里已经购买过了，所以不能继续购买。</p>
+<p>购买之后，会证书20个单域名的ssl证书，尽管是单域名的，但对学习来说已经够用了。</p>
+<p>接着点击证书申请</p>
+<img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210407084512506.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210407084512506" style="zoom:80%;" />
+
+<p>接着在证书管理下面就有一个待申请的证书，点击证书申请</p>
+<p><img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210407084645850.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210407084645850"></p>
+<p>填写相关信息后点击下一步</p>
+<img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210407084920488.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210407084920488" style="zoom: 67%;" />
+
+
+
+<img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210407085156865.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210407085156865" style="zoom: 67%;" />
+
+<img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210407085228144.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210407085228144" style="zoom:67%;" />
+
+<p>点击下载，在证书下载页面根据你的服务器类型下载对应的证书。七牛云上的我不知道是啥服务器就下载的其他，最后没想到成功了。</p>
+<img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210407085342402.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210407085342402" style="zoom:67%;" />
+
+<p>下载完成之后，解压缩后会出现下面两个文件。</p>
+<p><img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210407085741414.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210407085741414"></p>
+<h3 id="二、七牛云域名绑定ssl证书"><a href="#二、七牛云域名绑定ssl证书" class="headerlink" title="二、七牛云域名绑定ssl证书"></a>二、七牛云域名绑定ssl证书</h3><p><img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210407085950408.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210407085950408"></p>
+<p>在CDN域名管理添加一个域名，域名类型选择普通类型，加速域名我这里写的是abc.xslovestudy.com，bucket就选择你绑定域名的那个空间。</p>
+<p><img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210407090100906.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210407090100906"></p>
+<p>添加成功后，点击配置</p>
+<p><img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210407090542164.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210407090542164"></p>
+<p><img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210407090731719.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210407090731719"></p>
+<p>选择本地证书，接着就下载好的证书的两个文件的内容粘贴上去即可。</p>
+<p><img "" class="lazyload placeholder" data-original="http://abc.xslovestudy.com/image-20210407090657679.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="image-20210407090657679"></p>
+<p>接着在阿里云的域名管理中心配置一下别名即可。</p>
 
       </div>
       
@@ -648,7 +647,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2021/04/05/cap-ding-li/" target="_blank" title="CAP定理">https://abcdefgxs.github.io/2021/04/05/cap-ding-li/</a>
+    <a href="/2021/04/07/gei-yu-ming-bang-ding-ssl-zheng-shu/" target="_blank" title="给域名绑定ssl证书">https://abcdefgxs.github.io/2021/04/07/gei-yu-ming-bang-ding-ssl-zheng-shu/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -666,40 +665,20 @@
 
 
 
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/medias/15.jpg" style="background-size: cover; 
-      background-position: center center;">
-    </div>
-    <a href="/2021/04/07/gei-yu-ming-bang-ding-ssl-zheng-shu/" class="post-nav-link">
-      <div class="title">
-        <i class="fa fa-angle-left"></i> 上一篇:
-        <div>给域名绑定ssl证书</div>
-      </div>
-      
-      <!-- <div class="content">
-        
-问题：最近图床的图片在博客上突然不能访问了，原因是谷歌浏览器自动把http的资源强行转换为https的
-
-一、前往阿里
-      </div> -->
-    </a>
-  </div>
-
 
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/medias/14.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/medias/10.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/04/05/eureka-xue-xi/" class="post-nav-link">
+    <a href="/2021/04/05/cap-ding-li/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
-        <div>eureka学习</div>
+        <div>CAP定理</div>
       </div>
       <!-- <div class="content">
-        什么是EurekaSpring-cloud Eureka介绍Spring-Cloud Euraka是Spring Clo
+        CAP的由来CAP来自于分布式系统三个重要的指标Consistency、Availability、Partition t
       </div> -->
     </a>
   </div>

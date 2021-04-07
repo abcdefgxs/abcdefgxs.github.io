@@ -6,7 +6,7 @@
   <link href="https://abcdefgxs.github.io/atom.xml" rel="self"/>
   
   <link href="https://abcdefgxs.github.io/"/>
-  <updated>2021-04-05T14:23:13.757Z</updated>
+  <updated>2021-04-07T01:17:16.706Z</updated>
   <id>https://abcdefgxs.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>给域名绑定ssl证书</title>
+    <link href="https://abcdefgxs.github.io/2021/04/07/gei-yu-ming-bang-ding-ssl-zheng-shu/"/>
+    <id>https://abcdefgxs.github.io/2021/04/07/gei-yu-ming-bang-ding-ssl-zheng-shu/</id>
+    <published>2021-04-07T00:26:28.000Z</published>
+    <updated>2021-04-07T01:17:16.706Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;问题：最近图床的图片在博客上突然不能访问了，原因是谷歌浏览器自动把http的资源强行转换为https的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;一、前往阿里云购买免费的ssl证书&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="域名" scheme="https://abcdefgxs.github.io/categories/%E5%9F%9F%E5%90%8D/"/>
+    
+    
+    <category term="域名" scheme="https://abcdefgxs.github.io/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>CAP定理</title>
