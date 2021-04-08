@@ -6,7 +6,7 @@
   <link href="https://abcdefgxs.github.io/atom.xml" rel="self"/>
   
   <link href="https://abcdefgxs.github.io/"/>
-  <updated>2021-04-07T01:17:16.706Z</updated>
+  <updated>2021-04-08T07:23:03.924Z</updated>
   <id>https://abcdefgxs.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微信小程序音乐播放歌词实时显示</title>
+    <link href="https://abcdefgxs.github.io/2021/04/08/wei-xin-xiao-cheng-xu-yin-le-bo-fang-ge-ci-shi-shi-xian-shi/"/>
+    <id>https://abcdefgxs.github.io/2021/04/08/wei-xin-xiao-cheng-xu-yin-le-bo-fang-ge-ci-shi-shi-xian-shi/</id>
+    <published>2021-04-08T06:15:06.000Z</published>
+    <updated>2021-04-08T07:23:03.924Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;简单记录一下微信小程序中音乐播放歌词实时显示如何实现&quot;&gt;&lt;a href=&quot;#简单记录一下微信小程序中音乐播放歌词实时显示如何实现&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="微信小程序" scheme="https://abcdefgxs.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>redis知识总结</title>
+    <link href="https://abcdefgxs.github.io/2021/04/07/redis-zhi-shi-zong-jie/"/>
+    <id>https://abcdefgxs.github.io/2021/04/07/redis-zhi-shi-zong-jie/</id>
+    <published>2021-04-07T14:59:21.000Z</published>
+    <updated>2021-04-07T15:14:02.840Z</updated>
+    
+    
+    
+    
+    <category term="redis" scheme="https://abcdefgxs.github.io/categories/redis/"/>
+    
+    
+    <category term="redis" scheme="https://abcdefgxs.github.io/tags/redis/"/>
+    
+    <category term="数据库" scheme="https://abcdefgxs.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
   
   <entry>
     <title>给域名绑定ssl证书</title>
