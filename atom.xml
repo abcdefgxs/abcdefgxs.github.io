@@ -44,8 +44,17 @@
     <link href="https://abcdefgxs.github.io/2021/04/07/redis-zhi-shi-zong-jie/"/>
     <id>https://abcdefgxs.github.io/2021/04/07/redis-zhi-shi-zong-jie/</id>
     <published>2021-04-07T14:59:21.000Z</published>
-    <updated>2021-04-07T15:14:02.840Z</updated>
+    <updated>2021-04-08T14:39:02.457Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;MyISAM: 表锁，十分影响效率！高并发下就会出现严重问题。&lt;/p&gt;
+&lt;p&gt;Innodb:</summary>
+        
+      
     
     
     
@@ -112,18 +121,18 @@
   </entry>
   
   <entry>
-    <title>eureka学习</title>
+    <title>几种注册中心学习</title>
     <link href="https://abcdefgxs.github.io/2021/04/05/eureka-xue-xi/"/>
     <id>https://abcdefgxs.github.io/2021/04/05/eureka-xue-xi/</id>
     <published>2021-04-05T13:34:29.000Z</published>
-    <updated>2021-04-08T12:27:22.882Z</updated>
+    <updated>2021-04-09T08:05:07.375Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h4 id=&quot;什么是Eureka&quot;&gt;&lt;a href=&quot;#什么是Eureka&quot; class=&quot;headerlink&quot; title=&quot;什么是Eureka&quot;&gt;&lt;/a&gt;什么是Eureka&lt;/h4&gt;&lt;h5 id=&quot;Spring-cloud-Eureka介绍&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;一、Eureka&quot;&gt;&lt;a href=&quot;#一、Eureka&quot; class=&quot;headerlink&quot; title=&quot;一、Eureka&quot;&gt;&lt;/a&gt;一、Eureka&lt;/h3&gt;&lt;h4 id=&quot;什么是Eureka&quot;&gt;&lt;a href=&quot;#什么是Eureka&quot;</summary>
         
       
     
