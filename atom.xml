@@ -6,7 +6,7 @@
   <link href="https://abcdefgxs.github.io/atom.xml" rel="self"/>
   
   <link href="https://abcdefgxs.github.io/"/>
-  <updated>2021-04-08T07:39:17.363Z</updated>
+  <updated>2021-06-01T12:31:52.696Z</updated>
   <id>https://abcdefgxs.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hystrix</title>
+    <link href="https://abcdefgxs.github.io/2021/04/09/hystrix/"/>
+    <id>https://abcdefgxs.github.io/2021/04/09/hystrix/</id>
+    <published>2021-04-09T11:39:30.000Z</published>
+    <updated>2021-06-01T12:31:52.696Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;什么是服务降级-FallBack&quot;&gt;&lt;a href=&quot;#什么是服务降级-FallBack&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>微信小程序音乐播放歌词实时显示</title>
@@ -44,7 +65,7 @@
     <link href="https://abcdefgxs.github.io/2021/04/07/redis-zhi-shi-zong-jie/"/>
     <id>https://abcdefgxs.github.io/2021/04/07/redis-zhi-shi-zong-jie/</id>
     <published>2021-04-07T14:59:21.000Z</published>
-    <updated>2021-04-08T14:39:02.457Z</updated>
+    <updated>2021-04-09T11:03:28.279Z</updated>
     
     
       
@@ -52,7 +73,9 @@
         
         
     <summary type="html">&lt;p&gt;MyISAM: 表锁，十分影响效率！高并发下就会出现严重问题。&lt;/p&gt;
-&lt;p&gt;Innodb:</summary>
+&lt;p&gt;Innodb: 行锁&lt;/p&gt;
+&lt;p&gt;redis启动&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
         
       
     
@@ -72,7 +95,7 @@
     <link href="https://abcdefgxs.github.io/2021/04/07/gei-yu-ming-bang-ding-ssl-zheng-shu/"/>
     <id>https://abcdefgxs.github.io/2021/04/07/gei-yu-ming-bang-ding-ssl-zheng-shu/</id>
     <published>2021-04-07T00:26:28.000Z</published>
-    <updated>2021-04-07T01:17:16.706Z</updated>
+    <updated>2021-06-05T14:04:08.929Z</updated>
     
     
       
@@ -100,7 +123,7 @@
     <link href="https://abcdefgxs.github.io/2021/04/05/cap-ding-li/"/>
     <id>https://abcdefgxs.github.io/2021/04/05/cap-ding-li/</id>
     <published>2021-04-05T13:45:48.000Z</published>
-    <updated>2021-04-05T14:23:13.757Z</updated>
+    <updated>2021-06-02T10:44:42.667Z</updated>
     
     
       
@@ -125,7 +148,7 @@
     <link href="https://abcdefgxs.github.io/2021/04/05/eureka-xue-xi/"/>
     <id>https://abcdefgxs.github.io/2021/04/05/eureka-xue-xi/</id>
     <published>2021-04-05T13:34:29.000Z</published>
-    <updated>2021-04-09T08:41:12.396Z</updated>
+    <updated>2021-04-29T02:20:21.409Z</updated>
     
     
       
@@ -531,29 +554,6 @@
     <category term="docker" scheme="https://abcdefgxs.github.io/tags/docker/"/>
     
     <category term="后端" scheme="https://abcdefgxs.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hello world</title>
-    <link href="https://abcdefgxs.github.io/2021/03/10/hello-world/"/>
-    <id>https://abcdefgxs.github.io/2021/03/10/hello-world/</id>
-    <published>2021-03-10T07:31:46.000Z</published>
-    <updated>2021-03-11T06:25:42.047Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span</summary>
-        
-      
-    
-    
-    
-    
-    <category term="前端" scheme="https://abcdefgxs.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
