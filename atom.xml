@@ -6,7 +6,7 @@
   <link href="https://abcdefgxs.github.io/atom.xml" rel="self"/>
   
   <link href="https://abcdefgxs.github.io/"/>
-  <updated>2021-06-01T12:31:52.696Z</updated>
+  <updated>2021-06-17T02:12:36.957Z</updated>
   <id>https://abcdefgxs.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>redis</title>
+    <link href="https://abcdefgxs.github.io/2021/06/17/redis/"/>
+    <id>https://abcdefgxs.github.io/2021/06/17/redis/</id>
+    <published>2021-06-17T01:46:00.000Z</published>
+    <updated>2021-06-17T02:12:36.957Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;package&lt;/span&gt; &lt;span</summary>
+        
+      
+    
+    
+    
+    
+    <category term="redis" scheme="https://abcdefgxs.github.io/tags/redis/"/>
+    
+    <category term="数据库" scheme="https://abcdefgxs.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
   
   <entry>
     <title>Hystrix</title>
@@ -528,32 +553,6 @@
     <category term="mysql" scheme="https://abcdefgxs.github.io/tags/mysql/"/>
     
     <category term="markdown" scheme="https://abcdefgxs.github.io/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>docker安装与基本命令</title>
-    <link href="https://abcdefgxs.github.io/2021/03/10/docker-an-zhuang-yu-ji-ben-ming-ling/"/>
-    <id>https://abcdefgxs.github.io/2021/03/10/docker-an-zhuang-yu-ji-ben-ming-ling/</id>
-    <published>2021-03-10T15:06:23.000Z</published>
-    <updated>2021-03-10T15:07:05.794Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;一、docker安装&quot;&gt;&lt;a href=&quot;#一、docker安装&quot; class=&quot;headerlink&quot; title=&quot;一、docker安装&quot;&gt;&lt;/a&gt;一、docker安装&lt;/h4&gt;&lt;p&gt;1.更新yum源。&lt;/p&gt;
-&lt;figure</summary>
-        
-      
-    
-    
-    
-    
-    <category term="docker" scheme="https://abcdefgxs.github.io/tags/docker/"/>
-    
-    <category term="后端" scheme="https://abcdefgxs.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
     
   </entry>
   
